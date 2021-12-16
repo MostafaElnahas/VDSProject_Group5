@@ -1,0 +1,9 @@
+C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/CMakeFiles/VDSProject.dir
+C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/src/CMakeFiles/Manager.dir
+C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
+C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/src/test/CMakeFiles/VDSProject_test.dir
+C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/src/test/CMakeFiles/edit_cache.dir
+C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/src/test/CMakeFiles/rebuild_cache.dir

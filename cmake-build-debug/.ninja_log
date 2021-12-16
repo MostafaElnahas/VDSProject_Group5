@@ -1,0 +1,5 @@
+# ninja log v5
+7	460	6613726478748563	src/CMakeFiles/Manager.dir/Manager.cpp.obj	386f6cac50843dd0
+464	608	6613726480268546	src/libManager.a	c9c83b64b7158eef
+1	615	6613726480348662	CMakeFiles/VDSProject.dir/src/main.cpp.obj	363b9c32d07172bb
+616	801	6613726482108527	VDSProject.exe	21eb998a81199566
