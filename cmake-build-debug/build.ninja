@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: VDSP_ProjectGroup5
+# Project: VDSPProject_Group5
 # Configurations: Debug
 # =============================================================================
 
@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDSProject_Group5/cmake-build-debug/
 
 #############################################
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -69,53 +69,53 @@ build install: phony CMakeFiles/install.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target VDS_ProjectGroup5
+# Object build statements for EXECUTABLE target VDSProject_Group5
 
 
 #############################################
-# Order-only phony target for VDS_ProjectGroup5
+# Order-only phony target for VDSProject_Group5
 
-build cmake_object_order_depends_target_VDS_ProjectGroup5: phony || cmake_object_order_depends_target_Manager
+build cmake_object_order_depends_target_VDSProject_Group5: phony || cmake_object_order_depends_target_Manager cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
-build CMakeFiles/VDS_ProjectGroup5.dir/src/main.cpp.obj: CXX_COMPILER__VDS_ProjectGroup5_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDS_ProjectGroup5/src/main.cpp || cmake_object_order_depends_target_VDS_ProjectGroup5
-  DEP_FILE = CMakeFiles\VDS_ProjectGroup5.dir\src\main.cpp.obj.d
+build CMakeFiles/VDSProject_Group5.dir/src/main.cpp.obj: CXX_COMPILER__VDSProject_Group5_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDSProject_Group5/src/main.cpp || cmake_object_order_depends_target_VDSProject_Group5
+  DEP_FILE = CMakeFiles\VDSProject_Group5.dir\src\main.cpp.obj.d
   FLAGS = -fPIC -std=c++11   -g
-  INCLUDES = -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googletest/include" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googlemock/include" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src/test"
-  OBJECT_DIR = CMakeFiles\VDS_ProjectGroup5.dir
-  OBJECT_FILE_DIR = CMakeFiles\VDS_ProjectGroup5.dir\src
+  INCLUDES = -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock/include" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/test" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest/include" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest"
+  OBJECT_DIR = CMakeFiles\VDSProject_Group5.dir
+  OBJECT_FILE_DIR = CMakeFiles\VDSProject_Group5.dir\src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target VDS_ProjectGroup5
+# Link build statements for EXECUTABLE target VDSProject_Group5
 
 
 #############################################
-# Link the executable VDS_ProjectGroup5.exe
+# Link the executable VDSProject_Group5.exe
 
-build VDS_ProjectGroup5.exe: CXX_EXECUTABLE_LINKER__VDS_ProjectGroup5_Debug CMakeFiles/VDS_ProjectGroup5.dir/src/main.cpp.obj | src/libManager.a || src/libManager.a
+build VDSProject_Group5.exe: CXX_EXECUTABLE_LINKER__VDSProject_Group5_Debug CMakeFiles/VDSProject_Group5.dir/src/main.cpp.obj | lib/libgtestd.a lib/libgtest_maind.a src/libManager.a lib/libgtestd.a || lib/libgtest_maind.a lib/libgtestd.a src/libManager.a
   FLAGS = -fPIC -std=c++11   -g
-  LINK_LIBRARIES = src/libManager.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  LINK_PATH = -LC:/Users/MOSTAF~1/DOCUME~1/GitHub/VDS_PR~1/src   -LC:/Users/MOSTAF~1/DOCUME~1/GitHub/VDS_PR~1/src/test
-  OBJECT_DIR = CMakeFiles\VDS_ProjectGroup5.dir
+  LINK_LIBRARIES = lib/libgtestd.a  lib/libgtest_maind.a  src/libManager.a  lib/libgtestd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_PATH = -LC:/Users/MOSTAF~1/DOCUME~1/GitHub/VDSPRO~1/src   -LC:/Users/MOSTAF~1/DOCUME~1/GitHub/VDSPRO~1/src/test
+  OBJECT_DIR = CMakeFiles\VDSProject_Group5.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = VDS_ProjectGroup5.exe
-  TARGET_IMPLIB = libVDS_ProjectGroup5.dll.a
-  TARGET_PDB = VDS_ProjectGroup5.exe.dbg
+  TARGET_FILE = VDSProject_Group5.exe
+  TARGET_IMPLIB = libVDSProject_Group5.dll.a
+  TARGET_PDB = VDSProject_Group5.exe.dbg
 
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5" -B"C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5" -B"C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -133,7 +133,7 @@ build list_install_components: phony
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -142,7 +142,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/CMakeLists.txt
+# C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/CMakeLists.txt
 # =============================================================================
 
 
@@ -150,7 +150,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 # Utility command for install/local
 
 build lib/googletest-main/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/googletest-main/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\lib\googletest-main" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -162,7 +162,7 @@ build lib/googletest-main/install/local: phony lib/googletest-main/CMakeFiles/in
 # Utility command for install
 
 build lib/googletest-main/CMakeFiles/install.util: CUSTOM_COMMAND lib/googletest-main/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\lib\googletest-main" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -174,7 +174,7 @@ build lib/googletest-main/install: phony lib/googletest-main/CMakeFiles/install.
 # Utility command for edit_cache
 
 build lib/googletest-main/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\lib\googletest-main" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -185,7 +185,7 @@ build lib/googletest-main/edit_cache: phony lib/googletest-main/CMakeFiles/edit_
 # Utility command for rebuild_cache
 
 build lib/googletest-main/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\lib\googletest-main" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5" -B"C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5" -B"C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -203,7 +203,7 @@ build lib/googletest-main/list_install_components: phony
 # Utility command for install/strip
 
 build lib/googletest-main/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/googletest-main/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\lib\googletest-main" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -212,7 +212,7 @@ build lib/googletest-main/install/strip: phony lib/googletest-main/CMakeFiles/in
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/CMakeLists.txt
+# C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/CMakeLists.txt
 # =============================================================================
 
 
@@ -220,7 +220,7 @@ build lib/googletest-main/install/strip: phony lib/googletest-main/CMakeFiles/in
 # Utility command for install/local
 
 build lib/googletest-main/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/googletest-main/googlemock/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\lib\googletest-main\googlemock" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main\googlemock" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -232,7 +232,7 @@ build lib/googletest-main/googlemock/install/local: phony lib/googletest-main/go
 # Utility command for install
 
 build lib/googletest-main/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND lib/googletest-main/googlemock/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\lib\googletest-main\googlemock" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main\googlemock" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -244,7 +244,7 @@ build lib/googletest-main/googlemock/install: phony lib/googletest-main/googlemo
 # Utility command for edit_cache
 
 build lib/googletest-main/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\lib\googletest-main\googlemock" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main\googlemock" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -259,10 +259,10 @@ build lib/googletest-main/googlemock/edit_cache: phony lib/googletest-main/googl
 
 build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
 
-build lib/googletest-main/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+build lib/googletest-main/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
   DEP_FILE = lib\googletest-main\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d
   FLAGS = -fPIC -std=c++11   -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googlemock/include" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googlemock" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googletest/include" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googletest"
+  INCLUDES = -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock/include" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest/include" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest"
   OBJECT_DIR = lib\googletest-main\googlemock\CMakeFiles\gmock_main.dir
   OBJECT_FILE_DIR = lib\googletest-main\googlemock\CMakeFiles\gmock_main.dir\src
 
@@ -291,10 +291,10 @@ build lib/libgmock_maind.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug lib/goog
 
 build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
 
-build lib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+build lib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
   DEP_FILE = lib\googletest-main\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d
   FLAGS = -fPIC -std=c++11   -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googlemock/include" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googlemock" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googletest/include" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googletest"
+  INCLUDES = -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock/include" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest/include" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest"
   OBJECT_DIR = lib\googletest-main\googlemock\CMakeFiles\gmock.dir
   OBJECT_FILE_DIR = lib\googletest-main\googlemock\CMakeFiles\gmock.dir\src
 
@@ -319,7 +319,7 @@ build lib/libgmockd.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug lib/googletest-mai
 # Utility command for rebuild_cache
 
 build lib/googletest-main/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\lib\googletest-main\googlemock" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5" -B"C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main\googlemock" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5" -B"C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -337,7 +337,7 @@ build lib/googletest-main/googlemock/list_install_components: phony
 # Utility command for install/strip
 
 build lib/googletest-main/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/googletest-main/googlemock/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\lib\googletest-main\googlemock" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main\googlemock" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -346,7 +346,7 @@ build lib/googletest-main/googlemock/install/strip: phony lib/googletest-main/go
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googlemock/CMakeLists.txt
+# C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock/CMakeLists.txt
 # =============================================================================
 
 
@@ -364,10 +364,10 @@ build lib/googletest-main/googletest/list_install_components: phony
 
 build cmake_object_order_depends_target_gtest: phony || lib/googletest-main/googletest/CMakeFiles/gtest.dir
 
-build lib/googletest-main/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+build lib/googletest-main/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
   DEP_FILE = lib\googletest-main\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d
   FLAGS = -fPIC -std=c++11   -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googletest/include" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googletest"
+  INCLUDES = -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest/include" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest"
   OBJECT_DIR = lib\googletest-main\googletest\CMakeFiles\gtest.dir
   OBJECT_FILE_DIR = lib\googletest-main\googletest\CMakeFiles\gtest.dir\src
 
@@ -396,10 +396,10 @@ build lib/libgtestd.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug lib/googletest-mai
 
 build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
 
-build lib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+build lib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
   DEP_FILE = lib\googletest-main\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d
   FLAGS = -fPIC -std=c++11   -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googletest/include" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googletest"
+  INCLUDES = -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest/include" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest"
   OBJECT_DIR = lib\googletest-main\googletest\CMakeFiles\gtest_main.dir
   OBJECT_FILE_DIR = lib\googletest-main\googletest\CMakeFiles\gtest_main.dir\src
 
@@ -424,7 +424,7 @@ build lib/libgtest_maind.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug lib/goog
 # Utility command for install/local
 
 build lib/googletest-main/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/googletest-main/googletest/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\lib\googletest-main\googletest" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main\googletest" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -436,7 +436,7 @@ build lib/googletest-main/googletest/install/local: phony lib/googletest-main/go
 # Utility command for install
 
 build lib/googletest-main/googletest/CMakeFiles/install.util: CUSTOM_COMMAND lib/googletest-main/googletest/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\lib\googletest-main\googletest" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main\googletest" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -448,7 +448,7 @@ build lib/googletest-main/googletest/install: phony lib/googletest-main/googlete
 # Utility command for edit_cache
 
 build lib/googletest-main/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\lib\googletest-main\googletest" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main\googletest" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -459,7 +459,7 @@ build lib/googletest-main/googletest/edit_cache: phony lib/googletest-main/googl
 # Utility command for rebuild_cache
 
 build lib/googletest-main/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\lib\googletest-main\googletest" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5" -B"C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main\googletest" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5" -B"C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -471,7 +471,7 @@ build lib/googletest-main/googletest/rebuild_cache: phony lib/googletest-main/go
 # Utility command for install/strip
 
 build lib/googletest-main/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/googletest-main/googletest/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\lib\googletest-main\googletest" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main\googletest" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -480,7 +480,7 @@ build lib/googletest-main/googletest/install/strip: phony lib/googletest-main/go
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/CMakeLists.txt
+# C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -492,10 +492,10 @@ build lib/googletest-main/googletest/install/strip: phony lib/googletest-main/go
 
 build cmake_object_order_depends_target_Manager: phony || src/CMakeFiles/Manager.dir
 
-build src/CMakeFiles/Manager.dir/Manager.cpp.obj: CXX_COMPILER__Manager_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDS_ProjectGroup5/src/Manager.cpp || cmake_object_order_depends_target_Manager
+build src/CMakeFiles/Manager.dir/Manager.cpp.obj: CXX_COMPILER__Manager_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDSProject_Group5/src/Manager.cpp || cmake_object_order_depends_target_Manager
   DEP_FILE = src\CMakeFiles\Manager.dir\Manager.cpp.obj.d
   FLAGS = -fPIC -std=c++11   -g
-  INCLUDES = -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googletest/include" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googlemock/include" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src/test"
+  INCLUDES = -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest/include" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock/include" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/test"
   OBJECT_DIR = src\CMakeFiles\Manager.dir
   OBJECT_FILE_DIR = src\CMakeFiles\Manager.dir
 
@@ -520,7 +520,7 @@ build src/libManager.a: CXX_STATIC_LIBRARY_LINKER__Manager_Debug src/CMakeFiles/
 # Utility command for install/local
 
 build src/CMakeFiles/install/local.util: CUSTOM_COMMAND src/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\src" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\src" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -532,7 +532,7 @@ build src/install/local: phony src/CMakeFiles/install/local.util
 # Utility command for install
 
 build src/CMakeFiles/install.util: CUSTOM_COMMAND src/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\src" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\src" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -544,7 +544,7 @@ build src/install: phony src/CMakeFiles/install.util
 # Utility command for edit_cache
 
 build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\src" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\src" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -555,7 +555,7 @@ build src/edit_cache: phony src/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\src" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5" -B"C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\src" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5" -B"C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -573,7 +573,7 @@ build src/list_install_components: phony
 # Utility command for install/strip
 
 build src/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\src" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\src" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -582,7 +582,7 @@ build src/install/strip: phony src/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src/CMakeLists.txt
+# C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -594,10 +594,10 @@ build src/install/strip: phony src/CMakeFiles/install/strip.util
 
 build cmake_object_order_depends_target_VDSProject_test: phony || cmake_object_order_depends_target_Manager cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
-build src/test/CMakeFiles/VDSProject_test.dir/main_test.cpp.obj: CXX_COMPILER__VDSProject_test_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDS_ProjectGroup5/src/test/main_test.cpp || cmake_object_order_depends_target_VDSProject_test
+build src/test/CMakeFiles/VDSProject_test.dir/main_test.cpp.obj: CXX_COMPILER__VDSProject_test_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDSProject_Group5/src/test/main_test.cpp || cmake_object_order_depends_target_VDSProject_test
   DEP_FILE = src\test\CMakeFiles\VDSProject_test.dir\main_test.cpp.obj.d
   FLAGS = -fPIC -std=c++11   -g
-  INCLUDES = -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googlemock/include" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src/test" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googletest/include" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googletest"
+  INCLUDES = -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock/include" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/test" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest/include" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest"
   OBJECT_DIR = src\test\CMakeFiles\VDSProject_test.dir
   OBJECT_FILE_DIR = src\test\CMakeFiles\VDSProject_test.dir
 
@@ -612,7 +612,7 @@ build src/test/CMakeFiles/VDSProject_test.dir/main_test.cpp.obj: CXX_COMPILER__V
 build src/test/VDSProject_test.exe: CXX_EXECUTABLE_LINKER__VDSProject_test_Debug src/test/CMakeFiles/VDSProject_test.dir/main_test.cpp.obj | src/libManager.a lib/libgtestd.a lib/libgtest_maind.a lib/libgtestd.a || lib/libgtest_maind.a lib/libgtestd.a src/libManager.a
   FLAGS = -fPIC -std=c++11   -g
   LINK_LIBRARIES = src/libManager.a  lib/libgtestd.a  lib/libgtest_maind.a  -lpthread  lib/libgtestd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  LINK_PATH = -LC:/Users/MOSTAF~1/DOCUME~1/GitHub/VDS_PR~1/src   -LC:/Users/MOSTAF~1/DOCUME~1/GitHub/VDS_PR~1/src/test
+  LINK_PATH = -LC:/Users/MOSTAF~1/DOCUME~1/GitHub/VDSPRO~1/src   -LC:/Users/MOSTAF~1/DOCUME~1/GitHub/VDSPRO~1/src/test
   OBJECT_DIR = src\test\CMakeFiles\VDSProject_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -625,7 +625,7 @@ build src/test/VDSProject_test.exe: CXX_EXECUTABLE_LINKER__VDSProject_test_Debug
 # Utility command for install/local
 
 build src/test/CMakeFiles/install/local.util: CUSTOM_COMMAND src/test/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\src\test" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\src\test" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -637,7 +637,7 @@ build src/test/install/local: phony src/test/CMakeFiles/install/local.util
 # Utility command for install
 
 build src/test/CMakeFiles/install.util: CUSTOM_COMMAND src/test/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\src\test" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\src\test" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -649,7 +649,7 @@ build src/test/install: phony src/test/CMakeFiles/install.util
 # Utility command for edit_cache
 
 build src/test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\src\test" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\src\test" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -660,7 +660,7 @@ build src/test/edit_cache: phony src/test/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build src/test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\src\test" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5" -B"C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\src\test" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5" -B"C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -678,7 +678,7 @@ build src/test/list_install_components: phony
 # Utility command for install/strip
 
 build src/test/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/test/all
-  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug\src\test" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\src\test" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -690,11 +690,11 @@ build src/test/install/strip: phony src/test/CMakeFiles/install/strip.util
 
 build Manager: phony src/libManager.a
 
+build VDSProject_Group5: phony VDSProject_Group5.exe
+
 build VDSProject_test: phony src/test/VDSProject_test.exe
 
 build VDSProject_test.exe: phony src/test/VDSProject_test.exe
-
-build VDS_ProjectGroup5: phony VDS_ProjectGroup5.exe
 
 build gmock: phony lib/libgmockd.a
 
@@ -720,42 +720,42 @@ build libgtestd.a: phony lib/libgtestd.a
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug
+# Folder: C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/cmake-build-debug
 
-build all: phony VDS_ProjectGroup5.exe lib/googletest-main/all src/all
+build all: phony VDSProject_Group5.exe lib/googletest-main/all src/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/lib/googletest-main
+# Folder: C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/cmake-build-debug/lib/googletest-main
 
 build lib/googletest-main/all: phony lib/googletest-main/googlemock/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/lib/googletest-main/googlemock
+# Folder: C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/cmake-build-debug/lib/googletest-main/googlemock
 
 build lib/googletest-main/googlemock/all: phony lib/libgmock_maind.a lib/libgmockd.a lib/googletest-main/googletest/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/lib/googletest-main/googletest
+# Folder: C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/cmake-build-debug/lib/googletest-main/googletest
 
 build lib/googletest-main/googletest/all: phony lib/libgtestd.a lib/libgtest_maind.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/src
+# Folder: C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/cmake-build-debug/src
 
 build src/all: phony src/libManager.a src/test/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/src/test
+# Folder: C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/cmake-build-debug/src/test
 
 build src/test/all: phony src/test/VDSProject_test.exe
 

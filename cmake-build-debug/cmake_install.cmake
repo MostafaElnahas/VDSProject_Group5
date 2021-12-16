@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5
+# Install script for directory: C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/VDSProject")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/VDSP_ProjectGroup5")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/lib/googletest-main/cmake_install.cmake")
-  include("C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/src/cmake_install.cmake")
+  include("C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/cmake-build-debug/lib/googletest-main/cmake_install.cmake")
+  include("C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/cmake-build-debug/src/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

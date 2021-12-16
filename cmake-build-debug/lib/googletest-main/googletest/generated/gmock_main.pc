@@ -1,5 +1,5 @@
-libdir=C:/Program Files (x86)/VDSProject/lib
-includedir=C:/Program Files (x86)/VDSProject/include
+libdir=C:/Program Files (x86)/VDSP_ProjectGroup5/lib
+includedir=C:/Program Files (x86)/VDSP_ProjectGroup5/include
 
 Name: gmock_main
 Description: GoogleMock (with main() function)

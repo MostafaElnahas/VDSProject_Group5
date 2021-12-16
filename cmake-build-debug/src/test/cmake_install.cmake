@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src/test
+# Install script for directory: C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/VDSProject")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/VDSP_ProjectGroup5")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

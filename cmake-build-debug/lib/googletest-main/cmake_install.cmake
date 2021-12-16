@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main
+# Install script for directory: C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/VDSProject")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/VDSP_ProjectGroup5")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/lib/googletest-main/googlemock/cmake_install.cmake")
+  include("C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/cmake-build-debug/lib/googletest-main/googlemock/cmake_install.cmake")
 
 endif()
 
