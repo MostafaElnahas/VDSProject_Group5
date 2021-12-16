@@ -9,6 +9,7 @@
 
 namespace ClassProject {
 
+    BDD_ID createVar(const std::string &a) = 0;
 }
 
 #endif
