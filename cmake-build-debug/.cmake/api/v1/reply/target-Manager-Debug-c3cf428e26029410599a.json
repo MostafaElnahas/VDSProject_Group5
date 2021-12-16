@@ -42,7 +42,19 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 8,
+				"line" : 6,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 9,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 12,
 				"parent" : 2
 			}
 		]
@@ -60,10 +72,18 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src"
+					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googletest/include"
 				},
 				{
 					"backtrace" : 4,
+					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/lib/googletest-main/googlemock/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src"
+				},
+				{
+					"backtrace" : 6,
 					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src/test"
 				}
 			],
