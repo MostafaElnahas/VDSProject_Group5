@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "src/test/VDSProject_test.exe"
+			"path" : "VDSProject_Group5.exe"
 		},
 		{
-			"path" : "src/test/VDSProject_test.pdb"
+			"path" : "VDSProject_Group5.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -20,7 +20,6 @@
 		],
 		"files" : 
 		[
-			"src/test/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -31,59 +30,56 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 5,
+				"line" : 16,
 				"parent" : 0
 			},
 			{
-				"file" : 1
-			},
-			{
 				"command" : 1,
-				"file" : 1,
+				"file" : 0,
 				"line" : 10,
-				"parent" : 2
+				"parent" : 0
 			},
 			{
 				"command" : 1,
-				"file" : 1,
+				"file" : 0,
 				"line" : 13,
-				"parent" : 2
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 6,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 7,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
-				"file" : 1,
+				"file" : 0,
 				"line" : 6,
-				"parent" : 2
+				"parent" : 0
 			},
 			{
 				"command" : 3,
-				"file" : 1,
+				"file" : 0,
 				"line" : 9,
-				"parent" : 2
+				"parent" : 0
 			},
 			{
 				"command" : 3,
-				"file" : 1,
+				"file" : 0,
 				"line" : 12,
-				"parent" : 2
+				"parent" : 0
 			},
 			{
 				"command" : 3,
-				"file" : 1,
+				"file" : 0,
 				"line" : 5,
-				"parent" : 2
+				"parent" : 0
 			}
 		]
 	},
@@ -99,24 +95,24 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 7,
+					"backtrace" : 6,
 					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock/include"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 8,
 					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/test"
 				},
 				{
-					"backtrace" : 10,
+					"backtrace" : 9,
 					"isSystem" : true,
 					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest/include"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 4,
 					"isSystem" : true,
 					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest"
 				}
@@ -131,19 +127,19 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 5,
-			"id" : "Manager::@145eef247bfb46b6828c"
-		},
-		{
-			"backtrace" : 6,
+			"backtrace" : 4,
 			"id" : "gtest::@dab05dd17b1c29c75d4c"
 		},
 		{
-			"backtrace" : 6,
+			"backtrace" : 4,
 			"id" : "gtest_main::@dab05dd17b1c29c75d4c"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "Manager::@145eef247bfb46b6828c"
 		}
 	],
-	"id" : "VDSProject_test::@b7fcbc08bf8df37e9c1b",
+	"id" : "VDSProject_Group5::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -157,14 +153,24 @@
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 3,
+				"backtrace" : 2,
 				"fragment" : "-LC:\\Users\\MOSTAF~1\\DOCUME~1\\GitHub\\VDSPRO~1\\src",
 				"role" : "libraryPath"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-LC:\\Users\\MOSTAF~1\\DOCUME~1\\GitHub\\VDSPRO~1\\src\\test",
 				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib\\libgtestd.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib\\libgtest_maind.a",
+				"role" : "libraries"
 			},
 			{
 				"backtrace" : 5,
@@ -172,22 +178,7 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 6,
-				"fragment" : "lib\\libgtestd.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 6,
-				"fragment" : "lib\\libgtest_maind.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 6,
-				"fragment" : "-lpthread",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 6,
+				"backtrace" : 4,
 				"fragment" : "lib\\libgtestd.a",
 				"role" : "libraries"
 			},
@@ -198,12 +189,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "VDSProject_test",
-	"nameOnDisk" : "VDSProject_test.exe",
+	"name" : "VDSProject_Group5",
+	"nameOnDisk" : "VDSProject_Group5.exe",
 	"paths" : 
 	{
-		"build" : "src/test",
-		"source" : "src/test"
+		"build" : ".",
+		"source" : "."
 	},
 	"sourceGroups" : 
 	[
@@ -220,7 +211,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/test/main_test.cpp",
+			"path" : "src/main.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
