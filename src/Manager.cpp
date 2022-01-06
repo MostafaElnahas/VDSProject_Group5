@@ -114,6 +114,10 @@ BDD_ID top_var;
     else {
       if (topVar(i)==0 ||topVar(i)==1)
       top_var = min(topVar(t),topVar(e));
+      else if(topVar(t)==0 && topVar(e)==1)
+      {
+          top_var = topVar(i);
+      }
       else if(topVar(t)==0 ||topVar(t)==1)
       top_var = min(topVar(i),topVar(e));
       else if(topVar(e)==0 ||topVar(e)==1)
@@ -185,7 +189,7 @@ ClassProject::BDD_ID ClassProject::Manager::coFactorFalse(BDD_ID f, BDD_ID x) {
     BDD_ID low;
     BDD_ID T;
     BDD_ID F;
-    if(isConstant(f)  || isConstant(x)  || topVar(f)>x)//Terminal case
+    if(isConstant(f) ||   isConstant(x) || topVar(f)>x)//Terminal case
         return f;
     for (const auto &unique_table: unique_table) {
         if (unique_table.id == f) {
@@ -206,59 +210,82 @@ ClassProject::BDD_ID ClassProject::Manager::coFactorFalse(BDD_ID f, BDD_ID x) {
 
 
     }
-
-
-
 };
+ClassProject::BDD_ID ClassProject::Manager::neg(BDD_ID a) {
+    return ite(a,0,1);
+}
+
+ClassProject::BDD_ID ClassProject::Manager:: and2(BDD_ID a, BDD_ID b) {
+    return ite(a,b,0);
+}
+ClassProject::BDD_ID ClassProject::Manager::or2(BDD_ID a, BDD_ID b) {
+    return ite(a,1,b);
+}
+ClassProject::BDD_ID ClassProject::Manager:: xor2(BDD_ID a, BDD_ID b) {
+    return ite(a,neg(b),b);
+}
+ClassProject:: BDD_ID ClassProject::Manager:: nand2(BDD_ID a, BDD_ID b) {
+    return neg(and2(a,b));
+}
+ClassProject::BDD_ID ClassProject::Manager:: nor2(BDD_ID a, BDD_ID b) {
+    return neg(or2(a,b));
+}
+ClassProject::BDD_ID ClassProject::Manager:: xnor2(BDD_ID a, BDD_ID b) {
+    return neg(xor2(a,b));
+}
+
+std::string ClassProject::Manager::getTopVarName(const BDD_ID &root) {
+BDD_ID Y;
+Y=topVar(root);
+for (const auto &unique_table: unique_table) {
+        if (unique_table.TopVar == Y)
+            return unique_table.label;
+    }
+
+}
+
+void ClassProject::Manager::findNodes(const BDD_ID &root, std::set<BDD_ID> &nodes_of_root) {
+   BDD_ID high_var;
+   BDD_ID low_var;
+    for (const auto &unique_table: unique_table) {
+        if (unique_table.id == root) {
+
+            high_var = unique_table.High;
+            low_var = unique_table.Low;
+            nodes_of_root.insert(high_var);
+            nodes_of_root.insert(low_var);
+
+        }
+    }
+        for (_Rb_tree_const_iterator<unsigned long long int> itr = nodes_of_root.begin(); itr != nodes_of_root.end(); itr++) {
+            cout << *itr << " ";
+        }
+        cout << endl;
+    if (high_var>1 )
+        findNodes(high_var, nodes_of_root);
+    if (low_var>0)
+        findNodes(low_var, nodes_of_root);
+
+}
+
+/*
 
 
 
-/* const BDD_ID &False() {
-     return 0;
- }
-
-
-
- bool isVariable(const BDD_ID x) {  //what does it mean? low is False and high is True?
-     for (const auto &unique_table : unique_table){
-         if (unique_table.id == x) {
-             if ((unique_table.low == 0) & (unique_table.high == 1))
-                 return True;
-         }
-     }
-     return False;
- }
 
 
 
 
-      BDD_ID neg(BDD_ID a) {
-     return ite(a,0,1);
- }
 
- BDD_ID and2(BDD_ID a, BDD_ID b) {
-     return ite(a,b,0);
- }
 
- BDD_ID or2(BDD_ID a, BDD_ID b) {
-     return ite(a,1,b);
- }
 
- BDD_ID xor2(BDD_ID a, BDD_ID b) {
-     return ite(a,neg(b),b);
- }
 
- BDD_ID nand2(BDD_ID a, BDD_ID b) {
-     return neg(and2(a,b));
- }
 
- BDD_ID nor2(BDD_ID a, BDD_ID b) {
-     return neg(or2(a,b));
- }
 
- BDD_ID xnor2(BDD_ID a, BDD_ID b) {
-     return neg(xor2(a,b));
- }
+
+
+
+
 
  size_t uniqueTableSize() {
      return unique_table.size();

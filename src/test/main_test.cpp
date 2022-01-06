@@ -68,6 +68,14 @@ TEST(ite, iteee) {
     EXPECT_EQ(0, myManager->coFactorFalse(2,2));
     EXPECT_EQ(1, myManager->coFactorFalse(1,2));
     EXPECT_EQ(0, myManager->coFactorFalse(2,2));
-    EXPECT_EQ(6, myManager->ite(2,1,3));         //t==e, output=t    NOT WORKING
+    //EXPECT_EQ(6, myManager->ite(2,1,3));
+    EXPECT_EQ(6, myManager->or2(2,3));
+    EXPECT_EQ(7, myManager->and2(4,5));
+    EXPECT_EQ(9, myManager->and2(6,7));
+    EXPECT_EQ("a", myManager->getTopVarName(9));
+    std::set<int>myset;
+    EXPECT_EQ(8, myManager->findNodes(9,myset);
+
+
 }
 
