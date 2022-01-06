@@ -88,7 +88,6 @@ bool ClassProject::Manager::isVariable(BDD_ID x) {
 
 
 ClassProject::BDD_ID ClassProject::Manager::topVar(BDD_ID f) {
-
     for (const auto &unique_table : unique_table){
         if (unique_table.id == f) {
             return unique_table.TopVar;
@@ -96,8 +95,12 @@ ClassProject::BDD_ID ClassProject::Manager::topVar(BDD_ID f) {
     }
 }
 ClassProject::BDD_ID ClassProject::Manager::ite(BDD_ID i, BDD_ID t, BDD_ID e) {
+BDD_ID X;
+BDD_ID top_var1;
+BDD_ID top_var;
 
-        if (isConstant(i) or (t == e) or ((t==1) & (e==0))) {    //terminal cases   --- is complete?
+    if (isConstant(i) or (t == e) or ((t==1) & (e==0)))
+    {
         if(i == 1)
             return t;
         else if (i==0)
@@ -107,21 +110,35 @@ ClassProject::BDD_ID ClassProject::Manager::ite(BDD_ID i, BDD_ID t, BDD_ID e) {
         else
             return i;
     }
+
     else {
-        BDD_ID top_var1 = min(topVar(i),topVar(t));
-        BDD_ID top_var = min(top_var1,topVar(e));
-        BDD_ID high_successor = ite(coFactorTrue(i,top_var),coFactorTrue(t,top_var),coFactorTrue(e,top_var));
+      if (topVar(i)==0 ||topVar(i)==1)
+      top_var = min(topVar(t),topVar(e));
+      else if(topVar(t)==0 ||topVar(t)==1)
+      top_var = min(topVar(i),topVar(e));
+      else if(topVar(e)==0 ||topVar(e)==1)
+      top_var = min(topVar(i), topVar(t));
+      else {
+      top_var1 = min(topVar(t), topVar(e));
+       top_var = min(top_var1, topVar(t));
+           }
+
+        BDD_ID ihigh= coFactorTrue(i,top_var);
+        BDD_ID thigh= coFactorTrue(t,top_var);
+        BDD_ID ehigh= coFactorTrue(e,top_var);
+        BDD_ID high_successor = ite(ihigh,thigh,ehigh);
         BDD_ID low_successor = ite(coFactorFalse(i,top_var),coFactorFalse(t,top_var),coFactorFalse(e,top_var));
+
         if(high_successor==low_successor)
             return high_successor;
         else{
 
 
-            BDD_ID X=findorAddVar(high_successor,low_successor,top_var);
+             X=findorAddVar(high_successor,low_successor,top_var);
           return X;
 
             }
-        }
+      }
     }
 
 
@@ -154,11 +171,12 @@ BDD_ID F;
     else{
         T= coFactorTrue(high,x);
         F= coFactorTrue(low,x);
-        return  ClassProject::Manager::ite(topVar(f),T,F);
+
+
+        return  ite(topVar(f),T,F);
 
 
        }
-
 
 
     };
@@ -184,7 +202,7 @@ ClassProject::BDD_ID ClassProject::Manager::coFactorFalse(BDD_ID f, BDD_ID x) {
     else{
         T= coFactorFalse(high,x);
         F= coFactorFalse(low,x);
-        return  ClassProject::Manager::ite(topVar(f),T,F);
+        return  ite(topVar(f),T,F);
 
 
     }

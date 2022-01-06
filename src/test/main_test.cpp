@@ -62,6 +62,12 @@ TEST(ite, iteee) {
     EXPECT_EQ(2, myManager->ite(1,2,3));// i==1, output=t
     EXPECT_EQ(3, myManager->ite(0,2,3));//i==0,output=e
     EXPECT_EQ(2, myManager->ite(2,2,2));//t==e, output=t
-    //EXPECT_EQ(6, myManager->ite(2,1,3));//t==e, output=t    NOT WORKING
+    EXPECT_EQ(1, myManager->coFactorTrue(1,2));
+    EXPECT_EQ(3, myManager->coFactorTrue(3,2));
+    EXPECT_EQ(3, myManager->coFactorTrue(3,2));
+    EXPECT_EQ(0, myManager->coFactorFalse(2,2));
+    EXPECT_EQ(1, myManager->coFactorFalse(1,2));
+    EXPECT_EQ(0, myManager->coFactorFalse(2,2));
+    EXPECT_EQ(6, myManager->ite(2,1,3));         //t==e, output=t    NOT WORKING
 }
 
