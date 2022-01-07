@@ -68,8 +68,12 @@ TEST(ite, iteee) {
     EXPECT_EQ(0, myManager->coFactorFalse(2,2));
     EXPECT_EQ(1, myManager->coFactorFalse(1,2));
     EXPECT_EQ(0, myManager->coFactorFalse(2,2));
+
     //EXPECT_EQ(6, myManager->ite(2,1,3));
     EXPECT_EQ(6, myManager->or2(2,3));
+    EXPECT_EQ(1, myManager->coFactorTrue(6));
+    EXPECT_EQ(3, myManager->coFactorFalse(6));
+
     EXPECT_EQ(7, myManager->and2(4,5));
     EXPECT_EQ(9, myManager->and2(6,7));
     EXPECT_EQ("a", myManager->getTopVarName(9));
@@ -111,4 +115,11 @@ TEST(logicgates, logic_gates) {
     EXPECT_EQ(0, myManager->xnor2(1,0));
     EXPECT_EQ(1, myManager->xnor2(0,0));
     EXPECT_EQ(7, myManager->xnor2(3,0));
+    EXPECT_EQ(1, myManager->nand2(1,0));
+    EXPECT_EQ(1, myManager->nand2(0,0));
+    EXPECT_EQ(0, myManager->nand2(1,1));
+    EXPECT_EQ(0, myManager->nor2(1,0));
+    EXPECT_EQ(1, myManager->nor2(0,0));
+    EXPECT_EQ(0, myManager->nor2(1,1));
+
 }

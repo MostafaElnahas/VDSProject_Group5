@@ -207,44 +207,55 @@ ClassProject::BDD_ID ClassProject::Manager::coFactorFalse(BDD_ID f, BDD_ID x) {
 
     }
 };
-ClassProject::BDD_ID ClassProject::Manager::coFactorFalse(BDD_ID f)  {
-    return coFactorTrue(f,topVar(f));
-    }
+ClassProject::BDD_ID ClassProject::Manager::coFactorFalse(BDD_ID f)
+{
+    return coFactorFalse(f,topVar(f));
+}
 
-ClassProject::BDD_ID ClassProject::Manager::neg(BDD_ID a) {
+ClassProject::BDD_ID ClassProject::Manager::neg(BDD_ID a)
+{
     return ite(a,0,1);
 }
 
-ClassProject::BDD_ID ClassProject::Manager:: and2(BDD_ID a, BDD_ID b) {
+ClassProject::BDD_ID ClassProject::Manager:: and2(BDD_ID a, BDD_ID b)
+{
     return ite(a,b,0);
 }
-ClassProject::BDD_ID ClassProject::Manager::or2(BDD_ID a, BDD_ID b) {
+ClassProject::BDD_ID ClassProject::Manager::or2(BDD_ID a, BDD_ID b)
+{
     return ite(a,1,b);
 }
-ClassProject::BDD_ID ClassProject::Manager:: xor2(BDD_ID a, BDD_ID b) {
+ClassProject::BDD_ID ClassProject::Manager:: xor2(BDD_ID a, BDD_ID b)
+{
     return ite(a,neg(b),b);
 }
-ClassProject:: BDD_ID ClassProject::Manager:: nand2(BDD_ID a, BDD_ID b) {
+ClassProject:: BDD_ID ClassProject::Manager:: nand2(BDD_ID a, BDD_ID b)
+{
     return neg(and2(a,b));
 }
-ClassProject::BDD_ID ClassProject::Manager:: nor2(BDD_ID a, BDD_ID b) {
+ClassProject::BDD_ID ClassProject::Manager:: nor2(BDD_ID a, BDD_ID b)
+{
     return neg(or2(a,b));
 }
-ClassProject::BDD_ID ClassProject::Manager:: xnor2(BDD_ID a, BDD_ID b) {
+ClassProject::BDD_ID ClassProject::Manager:: xnor2(BDD_ID a, BDD_ID b)
+{
     return neg(xor2(a,b));
 }
 
-std::string ClassProject::Manager::getTopVarName(const BDD_ID &root) {
+std::string ClassProject::Manager::getTopVarName(const BDD_ID &root)
+{
 BDD_ID Y;
 Y=topVar(root);
-for (const auto &unique_table: unique_table) {
+for (const auto &unique_table: unique_table)
+{
         if (unique_table.TopVar == Y)
             return unique_table.label;
-    }
+}
 
 }
 
-void ClassProject::Manager::findNodes(const  BDD_ID &root, std::set<BDD_ID> &nodes_of_root) {
+void ClassProject::Manager::findNodes(const  BDD_ID &root, std::set<BDD_ID> &nodes_of_root)
+{
    BDD_ID high_var;
    BDD_ID low_var;
 
@@ -261,14 +272,14 @@ void ClassProject::Manager::findNodes(const  BDD_ID &root, std::set<BDD_ID> &nod
            h=nodes_of_root.insert(high_var);
            l=nodes_of_root.insert(low_var);
 
-    for (auto it=nodes_of_root.begin(); it != nodes_of_root.end(); ++it)
     if (h.second==true )
         findNodes(high_var, nodes_of_root);
     if (l.second==true)
         findNodes(low_var, nodes_of_root);
 
 }
-void ClassProject::Manager::findVars(const BDD_ID &root, std::set<BDD_ID> &vars_of_root) {
+void ClassProject::Manager::findVars(const BDD_ID &root, std::set<BDD_ID> &vars_of_root)
+{
   set<BDD_ID> container;
   BDD_ID x,y;
     set<BDD_ID>:: iterator it;
@@ -279,11 +290,7 @@ void ClassProject::Manager::findVars(const BDD_ID &root, std::set<BDD_ID> &vars_
         x = *it;
         vars_of_root.insert(unique_table[x].TopVar);
     }
-    for( i = vars_of_root.begin(); i!=vars_of_root.end(); ++i){
-
-    }
-
-        }
+}
         size_t ClassProject::Manager::uniqueTableSize() {
 
     return unique_table.size();
