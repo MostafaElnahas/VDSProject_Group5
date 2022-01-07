@@ -102,7 +102,13 @@ TEST(logicgates, logic_gates) {
     EXPECT_EQ(1, myManager->or2(1,0));
     EXPECT_EQ(0, myManager->or2(0,0));
     EXPECT_EQ(1, myManager->or2(2,1));
-    EXPECT_EQ(1, myManager->and2(1,0));
+    EXPECT_EQ(0, myManager->and2(1,0));
     EXPECT_EQ(0, myManager->and2(0,0));
-    EXPECT_EQ(1, myManager->and2(2,1));
+    EXPECT_EQ(2, myManager->and2(2,1));
+    EXPECT_EQ(1, myManager->xor2(1,0));
+    EXPECT_EQ(0, myManager->xor2(0,0));
+    EXPECT_EQ(6, myManager->xor2(2,1));
+    EXPECT_EQ(0, myManager->xnor2(1,0));
+    EXPECT_EQ(1, myManager->xnor2(0,0));
+    EXPECT_EQ(7, myManager->xnor2(3,0));
 }
