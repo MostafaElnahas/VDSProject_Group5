@@ -140,7 +140,6 @@ BDD_ID top_var;
 
              X=findorAddVar(high_successor,low_successor,top_var);
           return X;
-
             }
       }
     }
@@ -244,26 +243,29 @@ for (const auto &unique_table: unique_table) {
 
 }
 
-void ClassProject::Manager::findNodes(const BDD_ID &root, std::set<BDD_ID> &nodes_of_root) {
+void ClassProject::Manager::findNodes(const  BDD_ID &root, std::set<BDD_ID> &nodes_of_root) {
    BDD_ID high_var;
    BDD_ID low_var;
-    for (const auto &unique_table: unique_table) {
-        if (unique_table.id == root) {
 
-            high_var = unique_table.High;
-            low_var = unique_table.Low;
-            nodes_of_root.insert(high_var);
-            nodes_of_root.insert(low_var);
+    std::pair<std::set<BDD_ID>::iterator,bool> h,l;
 
-        }
-    }
-        for (_Rb_tree_const_iterator<unsigned long long int> itr = nodes_of_root.begin(); itr != nodes_of_root.end(); itr++) {
-            cout << *itr << " ";
-        }
-        cout << endl;
-    if (high_var>1 )
+            high_var = unique_table[root].High;
+            low_var = unique_table[root].Low;
+            if (high_var==1 && low_var==0) {
+                nodes_of_root.insert(1);
+                nodes_of_root.insert(0);
+                return;
+            }
+            nodes_of_root.insert(root);
+           h=nodes_of_root.insert(high_var);
+           l=nodes_of_root.insert(low_var);
+
+    for (auto it=nodes_of_root.begin(); it != nodes_of_root.end(); ++it)
+        cout << ' ' << *it;
+
+    if (h.second==true )
         findNodes(high_var, nodes_of_root);
-    if (low_var>0)
+    if (l.second==true)
         findNodes(low_var, nodes_of_root);
 
 }

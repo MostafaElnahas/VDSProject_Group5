@@ -73,8 +73,12 @@ TEST(ite, iteee) {
     EXPECT_EQ(7, myManager->and2(4,5));
     EXPECT_EQ(9, myManager->and2(6,7));
     EXPECT_EQ("a", myManager->getTopVarName(9));
-    std::set<int>myset;
-    EXPECT_EQ(8, myManager->findNodes(9,myset);
+    set<ClassProject::BDD_ID> val;
+    set<ClassProject::BDD_ID> i;
+    i={9,8,7,5,1,0};
+myManager->findNodes(9,val);
+
+    EXPECT_EQ(i, (val));
 
 
 }

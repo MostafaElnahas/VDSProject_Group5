@@ -65,11 +65,11 @@ namespace ClassProject {
 
                 std::string getTopVarName(const BDD_ID &root);
 
-                      void findNodes(const BDD_ID &root, std::set<BDD_ID> &nodes_of_root);
+                void findNodes(const BDD_ID &root, std::set<BDD_ID> &nodes_of_root);
+/*
+          void findVars(const BDD_ID &root, std::set<BDD_ID> &vars_of_root);
 
-        /*        void findVars(const BDD_ID &root, std::set<BDD_ID> &vars_of_root);
-
-              size_t uniqueTableSize();*/
+                    size_t uniqueTableSize();*/
 
     private:
         vector<rows> unique_table;
