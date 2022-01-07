@@ -27,9 +27,9 @@ namespace ClassProject {
 
         BDD_ID createVar(const std::string &label);
 
-       // const BDD_ID &True();
+        const BDD_ID &True();
 
-       // const BDD_ID &False();
+       const BDD_ID &False();
 
         bool isConstant(BDD_ID f);
 
@@ -45,9 +45,9 @@ namespace ClassProject {
 
         BDD_ID coFactorFalse(BDD_ID f, BDD_ID x);
 
-      // BDD_ID coFactorTrue(BDD_ID f);
+       BDD_ID coFactorTrue(BDD_ID f);
 
-      //  BDD_ID coFactorFalse(BDD_ID f);
+       BDD_ID coFactorFalse(BDD_ID f);
 
         BDD_ID neg(BDD_ID a);
 
@@ -66,10 +66,10 @@ namespace ClassProject {
                 std::string getTopVarName(const BDD_ID &root);
 
                 void findNodes(const BDD_ID &root, std::set<BDD_ID> &nodes_of_root);
-/*
+
           void findVars(const BDD_ID &root, std::set<BDD_ID> &vars_of_root);
 
-                    size_t uniqueTableSize();*/
+                size_t uniqueTableSize();
 
     private:
         vector<rows> unique_table;

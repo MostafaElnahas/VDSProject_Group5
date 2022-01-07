@@ -73,13 +73,36 @@ TEST(ite, iteee) {
     EXPECT_EQ(7, myManager->and2(4,5));
     EXPECT_EQ(9, myManager->and2(6,7));
     EXPECT_EQ("a", myManager->getTopVarName(9));
-    set<ClassProject::BDD_ID> val;
-    set<ClassProject::BDD_ID> i;
+    set<ClassProject::BDD_ID> val,vars;
+    set<ClassProject::BDD_ID> i,j;
     i={9,8,7,5,1,0};
+    j={2,3,4,5,1,0};
 myManager->findNodes(9,val);
 
     EXPECT_EQ(i, (val));
-
+    myManager->findVars(9,vars);
+    EXPECT_EQ(j, (vars));
+    EXPECT_EQ(10, myManager->uniqueTableSize());
+    EXPECT_EQ(1, myManager->True());
+    EXPECT_EQ(0, myManager->False());
 
 }
 
+
+TEST(logicgates, logic_gates) {
+    ClassProject::Manager * myManager = new ClassProject::Manager();
+    EXPECT_EQ(2, myManager->createVar("a"));
+    EXPECT_EQ(2, myManager->topVar(2));
+    EXPECT_EQ(3, myManager->createVar("b"));
+    EXPECT_EQ(3, myManager->topVar(3));
+    EXPECT_EQ(4, myManager->createVar("c"));
+    EXPECT_EQ(4, myManager->topVar(4));
+    EXPECT_EQ(5, myManager->createVar("d"));
+    EXPECT_EQ(5, myManager->topVar(5));
+    EXPECT_EQ(1, myManager->or2(1,0));
+    EXPECT_EQ(0, myManager->or2(0,0));
+    EXPECT_EQ(1, myManager->or2(2,1));
+    EXPECT_EQ(1, myManager->and2(1,0));
+    EXPECT_EQ(0, myManager->and2(0,0));
+    EXPECT_EQ(1, myManager->and2(2,1));
+}

@@ -45,29 +45,24 @@ ClassProject::BDD_ID ClassProject::Manager::findorAddVar( BDD_ID high, BDD_ID lo
 
     }
 
+const ClassProject::BDD_ID & ClassProject :: Manager::True(){
+
+    return unique_table[1].id;
+}
+const ClassProject::BDD_ID & ClassProject :: Manager::False() {
+
+    return unique_table[0].id;
+}
 
 
 
 
 
 
-    /*
-    for (const auto &unique_table: unique_table) {
-        if (unique_table.label == label) {
-            return unique_table.id;
-        } else {
-            filltable(label, sizeof(unique_table), 1, 0, sizeof(unique_table));//other cases?
-            return sizeof(unique_table);
-        }
-    }
-     */
 
 
-/*const ClassProject::BDD_ID ClassProject::Manager::&True(){
 
-    return 1;
-    }
-*/
+
     bool ClassProject::Manager::isConstant(BDD_ID f) {
 
         return (f==0) || (f==1);
@@ -181,8 +176,10 @@ BDD_ID F;
 
        }
 
-
-    };
+};
+ClassProject::BDD_ID ClassProject::Manager::coFactorTrue(BDD_ID f) {
+    return coFactorTrue(f,topVar(f));
+}
 ClassProject::BDD_ID ClassProject::Manager::coFactorFalse(BDD_ID f, BDD_ID x) {
     BDD_ID high;
     BDD_ID low;
@@ -210,6 +207,10 @@ ClassProject::BDD_ID ClassProject::Manager::coFactorFalse(BDD_ID f, BDD_ID x) {
 
     }
 };
+ClassProject::BDD_ID ClassProject::Manager::coFactorFalse(BDD_ID f)  {
+    return coFactorTrue(f,topVar(f));
+    }
+
 ClassProject::BDD_ID ClassProject::Manager::neg(BDD_ID a) {
     return ite(a,0,1);
 }
@@ -261,16 +262,33 @@ void ClassProject::Manager::findNodes(const  BDD_ID &root, std::set<BDD_ID> &nod
            l=nodes_of_root.insert(low_var);
 
     for (auto it=nodes_of_root.begin(); it != nodes_of_root.end(); ++it)
-        cout << ' ' << *it;
-
     if (h.second==true )
         findNodes(high_var, nodes_of_root);
     if (l.second==true)
         findNodes(low_var, nodes_of_root);
 
 }
+void ClassProject::Manager::findVars(const BDD_ID &root, std::set<BDD_ID> &vars_of_root) {
+  set<BDD_ID> container;
+  BDD_ID x,y;
+    set<BDD_ID>:: iterator it;
+    set<BDD_ID>:: iterator i;
 
-/*
+    findNodes(root,container);
+    for( it = container.begin(); it!=container.end(); ++it){
+        x = *it;
+        vars_of_root.insert(unique_table[x].TopVar);
+    }
+    for( i = vars_of_root.begin(); i!=vars_of_root.end(); ++i){
+
+    }
+
+        }
+        size_t ClassProject::Manager::uniqueTableSize() {
+
+    return unique_table.size();
+
+}
 
 
 
@@ -289,6 +307,3 @@ void ClassProject::Manager::findNodes(const  BDD_ID &root, std::set<BDD_ID> &nod
 
 
 
- size_t uniqueTableSize() {
-     return unique_table.size();
- }*/
