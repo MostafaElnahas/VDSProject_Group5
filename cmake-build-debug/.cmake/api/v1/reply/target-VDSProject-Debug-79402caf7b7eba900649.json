@@ -1,0 +1,236 @@
+{
+	"artifacts" : 
+	[
+		{
+<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/target-VDSProject_Group5-Debug-c9cc403904b298059ef9.json
+			"path" : "VDSProject_Group5.exe"
+		},
+		{
+			"path" : "VDSProject_Group5.pdb"
+=======
+			"path" : "VDSProject.exe"
+		},
+		{
+			"path" : "VDSProject.pdb"
+>>>>>>> parent of 51577b1 (CMAKE):cmake-build-debug/.cmake/api/v1/reply/target-VDSProject-Debug-79402caf7b7eba900649.json
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"link_directories",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/target-VDSProject_Group5-Debug-c9cc403904b298059ef9.json
+				"line" : 17,
+=======
+				"line" : 13,
+>>>>>>> parent of 51577b1 (CMAKE):cmake-build-debug/.cmake/api/v1/reply/target-VDSProject-Debug-79402caf7b7eba900649.json
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -fPIC -std=c++11   -g"
+				}
+			],
+			"includes" : 
+			[
+				{
+<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/target-VDSProject_Group5-Debug-c9cc403904b298059ef9.json
+					"backtrace" : 6,
+					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/test"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest/include"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest"
+=======
+					"backtrace" : 5,
+					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src/test"
+>>>>>>> parent of 51577b1 (CMAKE):cmake-build-debug/.cmake/api/v1/reply/target-VDSProject-Debug-79402caf7b7eba900649.json
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "gtest::@dab05dd17b1c29c75d4c"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "gtest_main::@dab05dd17b1c29c75d4c"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "Manager::@145eef247bfb46b6828c"
+		}
+	],
+<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/target-VDSProject_Group5-Debug-c9cc403904b298059ef9.json
+	"id" : "VDSProject_Group5::@6890427a1f51a3e7e1df",
+=======
+	"id" : "VDSProject::@6890427a1f51a3e7e1df",
+>>>>>>> parent of 51577b1 (CMAKE):cmake-build-debug/.cmake/api/v1/reply/target-VDSProject-Debug-79402caf7b7eba900649.json
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-fPIC -std=c++11   -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LC:\\Users\\MOSTAF~1\\DOCUME~1\\GitHub\\VDSPRO~1\\src",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-LC:\\Users\\MOSTAF~1\\DOCUME~1\\GitHub\\VDSPRO~1\\src\\test",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib\\libgtestd.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib\\libgtest_maind.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "src\\libManager.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "lib\\libgtestd.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/target-VDSProject_Group5-Debug-c9cc403904b298059ef9.json
+	"name" : "VDSProject_Group5",
+	"nameOnDisk" : "VDSProject_Group5.exe",
+=======
+	"name" : "VDSProject",
+	"nameOnDisk" : "VDSProject.exe",
+>>>>>>> parent of 51577b1 (CMAKE):cmake-build-debug/.cmake/api/v1/reply/target-VDSProject-Debug-79402caf7b7eba900649.json
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
