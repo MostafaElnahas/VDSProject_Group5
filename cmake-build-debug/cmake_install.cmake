@@ -39,8 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+<<<<<<< HEAD
   include("C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/cmake-build-debug/lib/googletest-main/cmake_install.cmake")
   include("C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/cmake-build-debug/src/cmake_install.cmake")
+=======
+  include("C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/src/cmake_install.cmake")
+>>>>>>> parent of 51577b1 (CMAKE)
 
 endif()
 

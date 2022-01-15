@@ -11,7 +11,11 @@
 # =============================================================================
 
 # =============================================================================
+<<<<<<< HEAD
 # Project: VDSPProject_Group5
+=======
+# Project: VDSProject
+>>>>>>> parent of 51577b1 (CMAKE)
 # Configurations: Debug
 # =============================================================================
 
@@ -39,6 +43,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
+<<<<<<< HEAD
 cmake_ninja_workdir = C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDSProject_Group5/cmake-build-debug/
 
 #############################################
@@ -238,11 +243,49 @@ build lib/googletest-main/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND lib
   restat = 1
 
 build lib/googletest-main/googlemock/install: phony lib/googletest-main/googlemock/CMakeFiles/install.util
+=======
+cmake_ninja_workdir = C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDS_ProjectGroup5/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target VDSProject
+
+
+#############################################
+# Order-only phony target for VDSProject
+
+build cmake_object_order_depends_target_VDSProject: phony || cmake_object_order_depends_target_Manager
+
+build CMakeFiles/VDSProject.dir/src/main.cpp.obj: CXX_COMPILER__VDSProject_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDS_ProjectGroup5/src/main.cpp || cmake_object_order_depends_target_VDSProject
+  DEP_FILE = CMakeFiles\VDSProject.dir\src\main.cpp.obj.d
+  FLAGS = -fPIC -std=c++11   -g
+  INCLUDES = -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src/test"
+  OBJECT_DIR = CMakeFiles\VDSProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\VDSProject.dir\src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target VDSProject
+
+
+#############################################
+# Link the executable VDSProject.exe
+
+build VDSProject.exe: CXX_EXECUTABLE_LINKER__VDSProject_Debug CMakeFiles/VDSProject.dir/src/main.cpp.obj | src/libManager.a || src/libManager.a
+  FLAGS = -fPIC -std=c++11   -g
+  LINK_LIBRARIES = src/libManager.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_PATH = -LC:/Users/MOSTAF~1/DOCUME~1/GitHub/VDS_PR~1/src   -LC:/Users/MOSTAF~1/DOCUME~1/GitHub/VDS_PR~1/src/test
+  OBJECT_DIR = CMakeFiles\VDSProject.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = VDSProject.exe
+  TARGET_IMPLIB = libVDSProject.dll.a
+  TARGET_PDB = VDSProject.exe.dbg
+>>>>>>> parent of 51577b1 (CMAKE)
 
 
 #############################################
 # Utility command for edit_cache
 
+<<<<<<< HEAD
 build lib/googletest-main/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
   COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main\googlemock" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
@@ -449,21 +492,31 @@ build lib/googletest-main/googletest/install: phony lib/googletest-main/googlete
 
 build lib/googletest-main/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
   COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main\googletest" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+=======
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+>>>>>>> parent of 51577b1 (CMAKE)
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build lib/googletest-main/googletest/edit_cache: phony lib/googletest-main/googletest/CMakeFiles/edit_cache.util
+build edit_cache: phony CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
+<<<<<<< HEAD
 build lib/googletest-main/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug\lib\googletest-main\googletest" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5" -B"C:\Users\Mostafa Elnahas\Documents\GitHub\VDSProject_Group5\cmake-build-debug""
+=======
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5" -B"C:\Users\Mostafa Elnahas\Documents\GitHub\VDS_ProjectGroup5\cmake-build-debug""
+>>>>>>> parent of 51577b1 (CMAKE)
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
+<<<<<<< HEAD
 build lib/googletest-main/googletest/rebuild_cache: phony lib/googletest-main/googletest/CMakeFiles/rebuild_cache.util
 
 
@@ -477,6 +530,9 @@ build lib/googletest-main/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMA
   restat = 1
 
 build lib/googletest-main/googletest/install/strip: phony lib/googletest-main/googletest/CMakeFiles/install/strip.util
+=======
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+>>>>>>> parent of 51577b1 (CMAKE)
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -495,7 +551,11 @@ build cmake_object_order_depends_target_Manager: phony || src/CMakeFiles/Manager
 build src/CMakeFiles/Manager.dir/Manager.cpp.obj: CXX_COMPILER__Manager_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDSProject_Group5/src/Manager.cpp || cmake_object_order_depends_target_Manager
   DEP_FILE = src\CMakeFiles\Manager.dir\Manager.cpp.obj.d
   FLAGS = -fPIC -std=c++11   -g
+<<<<<<< HEAD
   INCLUDES = -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest/include" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock/include" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/test"
+=======
+  INCLUDES = -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src/test"
+>>>>>>> parent of 51577b1 (CMAKE)
   OBJECT_DIR = src\CMakeFiles\Manager.dir
   OBJECT_FILE_DIR = src\CMakeFiles\Manager.dir
 
@@ -517,6 +577,7 @@ build src/libManager.a: CXX_STATIC_LIBRARY_LINKER__Manager_Debug src/CMakeFiles/
 
 
 #############################################
+<<<<<<< HEAD
 # Utility command for install/local
 
 build src/CMakeFiles/install/local.util: CUSTOM_COMMAND src/all
@@ -541,6 +602,8 @@ build src/install: phony src/CMakeFiles/install.util
 
 
 #############################################
+=======
+>>>>>>> parent of 51577b1 (CMAKE)
 # Utility command for edit_cache
 
 build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -562,6 +625,7 @@ build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 
+<<<<<<< HEAD
 
 #############################################
 # Utility command for list_install_components
@@ -580,6 +644,8 @@ build src/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/all
 
 build src/install/strip: phony src/CMakeFiles/install/strip.util
 
+=======
+>>>>>>> parent of 51577b1 (CMAKE)
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/CMakeLists.txt
@@ -592,12 +658,16 @@ build src/install/strip: phony src/CMakeFiles/install/strip.util
 #############################################
 # Order-only phony target for VDSProject_test
 
-build cmake_object_order_depends_target_VDSProject_test: phony || cmake_object_order_depends_target_Manager cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+build cmake_object_order_depends_target_VDSProject_test: phony || cmake_object_order_depends_target_Manager
 
 build src/test/CMakeFiles/VDSProject_test.dir/main_test.cpp.obj: CXX_COMPILER__VDSProject_test_Debug C$:/Users/Mostafa$ Elnahas/Documents/GitHub/VDSProject_Group5/src/test/main_test.cpp || cmake_object_order_depends_target_VDSProject_test
   DEP_FILE = src\test\CMakeFiles\VDSProject_test.dir\main_test.cpp.obj.d
   FLAGS = -fPIC -std=c++11   -g
+<<<<<<< HEAD
   INCLUDES = -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock/include" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/test" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest/include" -isystem "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest"
+=======
+  INCLUDES = -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src" -I"C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src/test"
+>>>>>>> parent of 51577b1 (CMAKE)
   OBJECT_DIR = src\test\CMakeFiles\VDSProject_test.dir
   OBJECT_FILE_DIR = src\test\CMakeFiles\VDSProject_test.dir
 
@@ -609,10 +679,15 @@ build src/test/CMakeFiles/VDSProject_test.dir/main_test.cpp.obj: CXX_COMPILER__V
 #############################################
 # Link the executable src\test\VDSProject_test.exe
 
-build src/test/VDSProject_test.exe: CXX_EXECUTABLE_LINKER__VDSProject_test_Debug src/test/CMakeFiles/VDSProject_test.dir/main_test.cpp.obj | src/libManager.a lib/libgtestd.a lib/libgtest_maind.a lib/libgtestd.a || lib/libgtest_maind.a lib/libgtestd.a src/libManager.a
+build src/test/VDSProject_test.exe: CXX_EXECUTABLE_LINKER__VDSProject_test_Debug src/test/CMakeFiles/VDSProject_test.dir/main_test.cpp.obj | src/libManager.a || src/libManager.a
   FLAGS = -fPIC -std=c++11   -g
+<<<<<<< HEAD
   LINK_LIBRARIES = src/libManager.a  lib/libgtestd.a  lib/libgtest_maind.a  -lpthread  lib/libgtestd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/Users/MOSTAF~1/DOCUME~1/GitHub/VDSPRO~1/src   -LC:/Users/MOSTAF~1/DOCUME~1/GitHub/VDSPRO~1/src/test
+=======
+  LINK_LIBRARIES = src/libManager.a  -lgtest  -lgtest_main  -lpthread  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_PATH = -LC:/Users/MOSTAF~1/DOCUME~1/GitHub/VDS_PR~1/src   -LC:/Users/MOSTAF~1/DOCUME~1/GitHub/VDS_PR~1/src/test
+>>>>>>> parent of 51577b1 (CMAKE)
   OBJECT_DIR = src\test\CMakeFiles\VDSProject_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -622,6 +697,7 @@ build src/test/VDSProject_test.exe: CXX_EXECUTABLE_LINKER__VDSProject_test_Debug
 
 
 #############################################
+<<<<<<< HEAD
 # Utility command for install/local
 
 build src/test/CMakeFiles/install/local.util: CUSTOM_COMMAND src/test/all
@@ -646,6 +722,8 @@ build src/test/install: phony src/test/CMakeFiles/install.util
 
 
 #############################################
+=======
+>>>>>>> parent of 51577b1 (CMAKE)
 # Utility command for edit_cache
 
 build src/test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -667,6 +745,7 @@ build src/test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build src/test/rebuild_cache: phony src/test/CMakeFiles/rebuild_cache.util
 
+<<<<<<< HEAD
 
 #############################################
 # Utility command for list_install_components
@@ -685,17 +764,24 @@ build src/test/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/test/all
 
 build src/test/install/strip: phony src/test/CMakeFiles/install/strip.util
 
+=======
+>>>>>>> parent of 51577b1 (CMAKE)
 # =============================================================================
 # Target aliases.
 
 build Manager: phony src/libManager.a
 
+<<<<<<< HEAD
 build VDSProject_Group5: phony VDSProject_Group5.exe
+=======
+build VDSProject: phony VDSProject.exe
+>>>>>>> parent of 51577b1 (CMAKE)
 
 build VDSProject_test: phony src/test/VDSProject_test.exe
 
 build VDSProject_test.exe: phony src/test/VDSProject_test.exe
 
+<<<<<<< HEAD
 build gmock: phony lib/libgmockd.a
 
 build gmock_main: phony lib/libgmock_maind.a
@@ -704,15 +790,9 @@ build gtest: phony lib/libgtestd.a
 
 build gtest_main: phony lib/libgtest_maind.a
 
+=======
+>>>>>>> parent of 51577b1 (CMAKE)
 build libManager.a: phony src/libManager.a
-
-build libgmock_maind.a: phony lib/libgmock_maind.a
-
-build libgmockd.a: phony lib/libgmockd.a
-
-build libgtest_maind.a: phony lib/libgtest_maind.a
-
-build libgtestd.a: phony lib/libgtestd.a
 
 # =============================================================================
 # Folder targets.
@@ -722,6 +802,7 @@ build libgtestd.a: phony lib/libgtestd.a
 #############################################
 # Folder: C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/cmake-build-debug
 
+<<<<<<< HEAD
 build all: phony VDSProject_Group5.exe lib/googletest-main/all src/all
 
 # =============================================================================
@@ -744,6 +825,9 @@ build lib/googletest-main/googlemock/all: phony lib/libgmock_maind.a lib/libgmoc
 # Folder: C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/cmake-build-debug/lib/googletest-main/googletest
 
 build lib/googletest-main/googletest/all: phony lib/libgtestd.a lib/libgtest_maind.a
+=======
+build all: phony VDSProject.exe src/all
+>>>>>>> parent of 51577b1 (CMAKE)
 
 # =============================================================================
 
@@ -766,14 +850,14 @@ build src/test/all: phony src/test/VDSProject_test.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../lib/googletest-main/CMakeLists.txt ../lib/googletest-main/googlemock/CMakeLists.txt ../lib/googletest-main/googlemock/cmake/gmock.pc.in ../lib/googletest-main/googlemock/cmake/gmock_main.pc.in ../lib/googletest-main/googletest/CMakeLists.txt ../lib/googletest-main/googletest/cmake/Config.cmake.in ../lib/googletest-main/googletest/cmake/gtest.pc.in ../lib/googletest-main/googletest/cmake/gtest_main.pc.in ../lib/googletest-main/googletest/cmake/internal_utils.cmake ../src/CMakeLists.txt ../src/test/CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/FindPython.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeRCCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../src/CMakeLists.txt ../src/test/CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeRCCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../lib/googletest-main/CMakeLists.txt ../lib/googletest-main/googlemock/CMakeLists.txt ../lib/googletest-main/googlemock/cmake/gmock.pc.in ../lib/googletest-main/googlemock/cmake/gmock_main.pc.in ../lib/googletest-main/googletest/CMakeLists.txt ../lib/googletest-main/googletest/cmake/Config.cmake.in ../lib/googletest-main/googletest/cmake/gtest.pc.in ../lib/googletest-main/googletest/cmake/gtest_main.pc.in ../lib/googletest-main/googletest/cmake/internal_utils.cmake ../src/CMakeLists.txt ../src/test/CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/FindPython.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeRCCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../src/CMakeLists.txt ../src/test/CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2021.3/bin/cmake/win/share/cmake-3.21/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeCXXCompiler.cmake CMakeFiles/3.21.1/CMakeRCCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
 
 
 #############################################

@@ -1,4 +1,5 @@
 # ninja log v5
+<<<<<<< HEAD
 1	10878	6613981672534199	build.ninja	36737b6892bbbc0a
 8	1718	6632747654431303	src/CMakeFiles/Manager.dir/Manager.cpp.obj	fbd784e51903a5d9
 1719	1978	6632747656061301	src/libManager.a	c9c83b64b7158eef
@@ -29,3 +30,9 @@
 1460	6271	6632751851602833	src/test/VDSProject_test.exe	52587005b2904ced
 7	3121	6632751992767966	src/test/CMakeFiles/VDSProject_test.dir/main_test.cpp.obj	2d037d4ddbab47ce
 3123	7443	6632752035887438	src/test/VDSProject_test.exe	52587005b2904ced
+=======
+7	460	6613726478748563	src/CMakeFiles/Manager.dir/Manager.cpp.obj	386f6cac50843dd0
+464	608	6613726480268546	src/libManager.a	c9c83b64b7158eef
+1	615	6613726480348662	CMakeFiles/VDSProject.dir/src/main.cpp.obj	363b9c32d07172bb
+616	801	6613726482108527	VDSProject.exe	21eb998a81199566
+>>>>>>> parent of 51577b1 (CMAKE)

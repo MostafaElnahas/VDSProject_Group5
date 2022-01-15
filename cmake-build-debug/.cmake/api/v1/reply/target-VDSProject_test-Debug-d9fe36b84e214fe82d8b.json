@@ -40,13 +40,13 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 10,
+				"line" : 6,
 				"parent" : 2
 			},
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 13,
+				"line" : 9,
 				"parent" : 2
 			},
 			{
@@ -64,25 +64,13 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 6,
-				"parent" : 2
-			},
-			{
-				"command" : 3,
-				"file" : 1,
-				"line" : 9,
-				"parent" : 2
-			},
-			{
-				"command" : 3,
-				"file" : 1,
-				"line" : 12,
-				"parent" : 2
-			},
-			{
-				"command" : 3,
-				"file" : 1,
 				"line" : 5,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 8,
 				"parent" : 2
 			}
 		]
@@ -100,6 +88,7 @@
 			[
 				{
 					"backtrace" : 7,
+<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/target-VDSProject_test-Debug-d9fe36b84e214fe82d8b.json
 					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock/include"
 				},
 				{
@@ -119,6 +108,13 @@
 					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest"
+=======
+					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src/test"
+>>>>>>> parent of 51577b1 (CMAKE):cmake-build-debug/.cmake/api/v1/reply/target-VDSProject_test-Debug-d6c3a701f1c7076ebfda.json
 				}
 			],
 			"language" : "CXX",
@@ -130,14 +126,6 @@
 	],
 	"dependencies" : 
 	[
-		{
-			"backtrace" : 6,
-			"id" : "gtest::@dab05dd17b1c29c75d4c"
-		},
-		{
-			"backtrace" : 6,
-			"id" : "gtest_main::@dab05dd17b1c29c75d4c"
-		},
 		{
 			"backtrace" : 5,
 			"id" : "Manager::@145eef247bfb46b6828c"
@@ -173,22 +161,17 @@
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "lib\\libgtestd.a",
+				"fragment" : "-lgtest",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "lib\\libgtest_maind.a",
+				"fragment" : "-lgtest_main",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 6,
 				"fragment" : "-lpthread",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 6,
-				"fragment" : "lib\\libgtestd.a",
 				"role" : "libraries"
 			},
 			{

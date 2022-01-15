@@ -42,19 +42,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 6,
-				"parent" : 2
-			},
-			{
-				"command" : 1,
-				"file" : 1,
-				"line" : 9,
-				"parent" : 2
-			},
-			{
-				"command" : 1,
-				"file" : 1,
-				"line" : 12,
+				"line" : 8,
 				"parent" : 2
 			}
 		]
@@ -72,6 +60,7 @@
 			[
 				{
 					"backtrace" : 3,
+<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/target-Manager-Debug-88b37c28d0fd4be89a95.json
 					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest/include"
 				},
 				{
@@ -85,6 +74,13 @@
 				{
 					"backtrace" : 6,
 					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/test"
+=======
+					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/Mostafa Elnahas/Documents/GitHub/VDS_ProjectGroup5/src/test"
+>>>>>>> parent of 51577b1 (CMAKE):cmake-build-debug/.cmake/api/v1/reply/target-Manager-Debug-e4bf5e8ff108878c6fc9.json
 				}
 			],
 			"language" : "CXX",
