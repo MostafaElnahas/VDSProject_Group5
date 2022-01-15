@@ -1,0 +1,1 @@
+  -LC:/Users/MOSTAF~1/DOCUME~1/GitHub/VDSPRO~1/src  -LC:/Users/MOSTAF~1/DOCUME~1/GitHub/VDSPRO~1/src/test  lib/libgtestd.a lib/libgtest_maind.a lib/libgtestd.a lib/libgtest_maind.a src/libManager.a lib/libgtestd.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
