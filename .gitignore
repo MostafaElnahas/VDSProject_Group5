@@ -11,4 +11,4 @@ CMakeFiles/*
 .cmake/*
 cmake*
 CMake*
-results/*
+src/results/*
