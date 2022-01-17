@@ -4,7 +4,7 @@ project(VDSProject_Group5    CXX C)
 
 project(VDSProject_Group5    CXX C)
 
-set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -fPIC -std=c++11 ${LLVM_CXX_FLAGS} ")
+set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -fPIC -std=c++14 ${LLVM_CXX_FLAGS} ")
 add_subdirectory(lib/googletest-main)
 include_directories(lib/googletest-main/googletest/include)
 include_directories(lib/googletest-main/googlemock/include)
@@ -22,8 +22,7 @@ link_directories(${CMAKE_SOURCE_DIR}/src/bench/)
 include_directories(${CMAKE_SOURCE_DIR}/src/verify/)
 link_directories(${CMAKE_SOURCE_DIR}/src/verify/)
 
-include_directories("/C:/Users/Mostafa Elnahas/Downloads/boost_1_66_0")
-link_directories("/C:/Users/Mostafa Elnahas/Downloads/boost_1_66_0")
+
 
 add_subdirectory(src)
 add_executable(VDSProject_Group5 src/main.cpp)
