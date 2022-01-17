@@ -6,6 +6,7 @@
 #include <vector>
 #include <iostream>
 #include <string>
+#include <memory>
 
 #include "Manager.h"
 #include "BenchParser.hpp"
@@ -24,7 +25,7 @@ int main(int argc, char *argv[]) {
     /* Parse the circuit from file and generate topological sorted circuit */
     BenchParser parsed_circuit(bench_file);
 
-    auto BDD_manager = make_shared<ClassProject::Manager>();
+    auto BDD_manager= make_shared<ClassProject::Manager>();
     auto circuit2BDD = make_unique<CircuitToBDD>(BDD_manager);
 
     double user_time, vm1, rss1, vm2, rss2;

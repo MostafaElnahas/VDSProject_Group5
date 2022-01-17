@@ -22,6 +22,8 @@ link_directories(${CMAKE_SOURCE_DIR}/src/bench/)
 include_directories(${CMAKE_SOURCE_DIR}/src/verify/)
 link_directories(${CMAKE_SOURCE_DIR}/src/verify/)
 
+include_directories("/C:/Users/Mostafa Elnahas/Downloads/boost_1_66_0")
+link_directories("/C:/Users/Mostafa Elnahas/Downloads/boost_1_66_0")
 
 add_subdirectory(src)
 add_executable(VDSProject_Group5 src/main.cpp)
@@ -31,3 +33,5 @@ target_link_libraries(VDSProject_Group5 gtest gtest_main)
 target_link_libraries(VDSProject_Group5 gtest gtest_main)
 
 target_link_libraries(VDSProject_Group5 Manager)
+
+
