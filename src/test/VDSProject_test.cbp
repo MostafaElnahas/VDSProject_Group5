@@ -27,6 +27,8 @@
 					<Add directory="C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock/include"/>
 					<Add directory="C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src"/>
 					<Add directory="C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/test"/>
+					<Add directory="C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/bench"/>
+					<Add directory="C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/verify"/>
 					<Add directory="C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest/include"/>
 					<Add directory="C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
@@ -54,6 +56,8 @@
 					<Add directory="C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googlemock/include"/>
 					<Add directory="C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src"/>
 					<Add directory="C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/test"/>
+					<Add directory="C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/bench"/>
+					<Add directory="C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/src/verify"/>
 					<Add directory="C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest/include"/>
 					<Add directory="C:/Users/Mostafa Elnahas/Documents/GitHub/VDSProject_Group5/lib/googletest-main/googletest"/>
 					<Add directory="C:/Program Files/JetBrains/CLion 2021.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>

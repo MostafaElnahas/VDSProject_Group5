@@ -107,20 +107,14 @@ BDD_ID top_var;
     }
 
     else {
-      if (topVar(i)==0 ||topVar(i)==1)
-      top_var = min(topVar(t),topVar(e));
-      else if(topVar(t)==0 && topVar(e)==1)
-      {
-          top_var = topVar(i);
-      }
-      else if(topVar(t)==0 ||topVar(t)==1)
-      top_var = min(topVar(i),topVar(e));
-      else if(topVar(e)==0 ||topVar(e)==1)
-      top_var = min(topVar(i), topVar(t));
-      else {
-      top_var1 = min(topVar(t), topVar(e));
-       top_var = min(top_var1, topVar(t));
-           }
+      if (isConstant(t)&& isConstant(e))
+          top_var= topVar(i);
+      else if (isConstant(e))
+          top_var= min(topVar(i), topVar(t));
+      else if (isConstant(t))
+          top_var= min(topVar(i), topVar(e));
+      else
+          top_var=min(topVar(i),min(topVar(e), topVar(t)));
 
         BDD_ID ihigh= coFactorTrue(i,top_var);
         BDD_ID thigh= coFactorTrue(t,top_var);
@@ -272,16 +266,16 @@ void ClassProject::Manager::findNodes(const  BDD_ID &root, std::set<BDD_ID> &nod
            h=nodes_of_root.insert(high_var);
            l=nodes_of_root.insert(low_var);
 
-    if (h.second==true )
+    if (h.second )
         findNodes(high_var, nodes_of_root);
-    if (l.second==true)
+    if (l.second)
         findNodes(low_var, nodes_of_root);
 
 }
 void ClassProject::Manager::findVars(const BDD_ID &root, std::set<BDD_ID> &vars_of_root)
 {
   set<BDD_ID> container;
-  BDD_ID x,y;
+  BDD_ID x;
     set<BDD_ID>:: iterator it;
     set<BDD_ID>:: iterator i;
 

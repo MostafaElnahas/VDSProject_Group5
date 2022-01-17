@@ -165,8 +165,8 @@ src/test/clean: src/test/CMakeFiles/VDSProject_test.dir/clean
 # Target rules for target CMakeFiles/VDSProject_Group5.dir
 
 # All Build rule for target.
-CMakeFiles/VDSProject_Group5.dir/all: lib/googletest-main/googletest/CMakeFiles/gtest_main.dir/all
 CMakeFiles/VDSProject_Group5.dir/all: lib/googletest-main/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/VDSProject_Group5.dir/all: lib/googletest-main/googletest/CMakeFiles/gtest_main.dir/all
 CMakeFiles/VDSProject_Group5.dir/all: src/CMakeFiles/Manager.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\VDSProject_Group5.dir\build.make CMakeFiles/VDSProject_Group5.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\VDSProject_Group5.dir\build.make CMakeFiles/VDSProject_Group5.dir/build
@@ -324,8 +324,8 @@ src/CMakeFiles/Manager.dir/clean:
 # Target rules for target src/test/CMakeFiles/VDSProject_test.dir
 
 # All Build rule for target.
-src/test/CMakeFiles/VDSProject_test.dir/all: lib/googletest-main/googletest/CMakeFiles/gtest_main.dir/all
 src/test/CMakeFiles/VDSProject_test.dir/all: lib/googletest-main/googletest/CMakeFiles/gtest.dir/all
+src/test/CMakeFiles/VDSProject_test.dir/all: lib/googletest-main/googletest/CMakeFiles/gtest_main.dir/all
 src/test/CMakeFiles/VDSProject_test.dir/all: src/CMakeFiles/Manager.dir/all
 	$(MAKE) $(MAKESILENT) -f src\test\CMakeFiles\VDSProject_test.dir\build.make src/test/CMakeFiles/VDSProject_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\test\CMakeFiles\VDSProject_test.dir\build.make src/test/CMakeFiles/VDSProject_test.dir/build
