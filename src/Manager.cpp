@@ -35,12 +35,18 @@ ClassProject::BDD_ID ClassProject::Manager::createVar(const std::string &label) 
 }
 ClassProject::BDD_ID ClassProject::Manager::findorAddVar( BDD_ID high, BDD_ID low,BDD_ID top) {
     BDD_ID new_ID = unique_table.size();
-    for (const auto &unique_table: unique_table) {
-        if (unique_table.TopVar == top && unique_table.High==high && unique_table.Low==low)
-            return unique_table.id;
-    }
+    #ifdef USE_HASH_TABLE
+    if (unique_table_hash.find({high, low, top})!=unique_table_hash.end())
+        return unique_table_hash.find({high, low, top})->second;
+    /* #else
+  *  for (const auto &unique_table: unique_table) {
+         if (unique_table.TopVar == top && unique_table.High == high && unique_table.Low == low)
+             return unique_table.id;
+     }*/
+   #endif
 
     filltable("new", new_ID, high, low, top);
+
     return new_ID;
 
     }
@@ -56,13 +62,6 @@ const ClassProject::BDD_ID & ClassProject :: Manager::False() {
 
 
 
-
-
-
-
-
-
-
     bool ClassProject::Manager::isConstant(BDD_ID f) {
 
         return (f==0) || (f==1);
@@ -70,6 +69,7 @@ const ClassProject::BDD_ID & ClassProject :: Manager::False() {
     }
 
 bool ClassProject::Manager::isVariable(BDD_ID x) {
+
 
     for (const auto &unique_table : unique_table){
         if (unique_table.id == x) {
@@ -105,7 +105,8 @@ BDD_ID top_var;
         else
             return i;
     }
-
+else if (  (computed_table.find({i,t,e})!=computed_table.end()))
+      return computed_table.find({i,t,e})->second;
     else {
       if (isConstant(t)&& isConstant(e))
           top_var= topVar(i);
@@ -128,7 +129,9 @@ BDD_ID top_var;
 
 
              X=findorAddVar(high_successor,low_successor,top_var);
-          return X;
+            computed_table.insert({{i,t,e},X});
+
+            return X;
             }
       }
     }
