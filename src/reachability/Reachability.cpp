@@ -4,3 +4,19 @@
 //
 
 #include "Reachability.h"
+ClassProject::ReachabilityInterface::ReachabilityInterface() {
+
+
+
+
+}
+
+
+    }
+
+
+
+}
+ClassProject::Reachability::Reachability(unsigned int stateSize) : ReachabilityInterface(stateSize){
+
+}

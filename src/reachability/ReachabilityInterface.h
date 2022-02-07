@@ -12,7 +12,6 @@ namespace ClassProject {
     class ReachabilityInterface : public Manager {
     public:
 
-        ReachabilityInterface() = delete;
         virtual ~ReachabilityInterface() = default;
 
         /**

@@ -97,7 +97,7 @@ ClassProject::BDD_ID ClassProject::Manager::ite(BDD_ID i, BDD_ID t, BDD_ID e) {
     BDD_ID X;
     BDD_ID top_var1;
     BDD_ID top_var;
-
+//add curly braces.
     if (isConstant(i) or (t == e) or ((t == 1) & (e == 0))) {
         if (i == 1)
             return t;
