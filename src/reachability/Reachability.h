@@ -11,12 +11,17 @@
 namespace ClassProject {
 
  class Reachability : public ReachabilityInterface {
+
      Reachability(unsigned int stateSize);
+     void findnextstates();
      const std::vector<BDD_ID> &getStates() ;
      bool isReachable(const std::vector<bool> &stateVector) ;
      void setTransitionFunctions(const std::vector<BDD_ID> &transitionFunctions) ;
-     void setInitState(const std::vector<bool> &stateVector) ;
 vector<BDD_ID> SetofStates;
+
+     void setInitState(const vector<bool> &stateVector);
+     void computereachablestate (const std::vector<BDD_ID> &transitionFunctions,const vector<bool> &stateVector);
+     vector<BDD_ID> TF;
  };
 
 }

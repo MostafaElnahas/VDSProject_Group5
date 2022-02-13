@@ -26,7 +26,7 @@ ClassProject::Manager::Manager() {
 }
 
 
-ClassProject::BDD_ID ClassProject::Manager::createVar(const std::string &label) {
+    ClassProject::BDD_ID ClassProject::Manager::createVar(const std::string &label) {
     BDD_ID new_ID = unique_table.size();
     filltable(label, new_ID, 1, 0, new_ID);
     return new_ID;
@@ -234,6 +234,7 @@ ClassProject::BDD_ID ClassProject::Manager::nor2(BDD_ID a, BDD_ID b) {
 }
 
 ClassProject::BDD_ID ClassProject::Manager::xnor2(BDD_ID a, BDD_ID b) {
+    return neg(xor2(a, b));
     return neg(xor2(a, b));
 }
 

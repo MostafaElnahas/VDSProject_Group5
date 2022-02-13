@@ -69,6 +69,11 @@ namespace ClassProject {
          */
         virtual void setInitState(const std::vector<bool> &stateVector) = 0;
 
+
+
+         virtual void computereachablestate(const std::vector<BDD_ID> &transitionFunctions,const vector<bool> &stateVector);
+
+
     };
 }
 
