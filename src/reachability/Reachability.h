@@ -15,18 +15,22 @@ namespace ClassProject {
      Reachability(unsigned int stateSize);
      void findnextstates();
      const std::vector<BDD_ID> &getStates() ;
-     bool isReachable(const std::vector<bool> &stateVector) ;
+    // bool isReachable(const std::vector<bool> &stateVector) ;
      void setTransitionFunctions(const std::vector<BDD_ID> &transitionFunctions) ;
 
-vector<bool> initialstate;
+vector<BDD_ID> initialstate;
 vector<BDD_ID> SetofStates;
 vector<BDD_ID> SetofnextStates;
-
 vector<BDD_ID> TF;
+BDD_ID Taw,Cs0,CRit,CR,imgc,imgnx;
 
 
      void setInitState(const vector<bool> &stateVector);
-     void computereachablestate (const std::vector<BDD_ID> &transitionFunctions,const vector<bool> &stateVector);
+     BDD_ID computetransationrelation ();
+     BDD_ID computecs0();
+      BDD_ID imgcurrentstate ();
+     BDD_ID imgnextstate ();
+     BDD_ID computereachablestate ();
  };
 
 }
