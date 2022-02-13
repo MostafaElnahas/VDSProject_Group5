@@ -11,6 +11,7 @@ ClassProject::Reachability::Reachability(unsigned int stateSize) : ReachabilityI
 if (stateSize==0)
     throw ;
 //Define States
+initialstate.assign(stateSize,0);
 for(int i=0; i <= stateSize; i++)
 {
 
@@ -20,7 +21,7 @@ SetofStates.push_back(Manager::createVar(st));
 //Define next states.
     for(int i=0; i <= stateSize; i++)
     {
-        SetofStates.push_back(Manager::createVar(st));
+        SetofnextStates.push_back(Manager::createVar(st));
 
     }
 }
@@ -54,7 +55,7 @@ void ClassProject::Reachability::setInitState(const std::vector<bool> &stateVect
 
     for(int i=0; i <= SetofStates.size(); i++)
     {
-     SetofStates[i]=stateVector[i];
+     initialstate[i]=stateVector[i];
 
     }
     }
@@ -62,7 +63,6 @@ void ClassProject::Reachability::setInitState(const std::vector<bool> &stateVect
  void ClassProject::Reachability::computereachablestate(const std::vector<BDD_ID> &transitionFunctions,const std::vector<bool> &stateVector)
 
  {
-
 
 
 

@@ -17,11 +17,16 @@ namespace ClassProject {
      const std::vector<BDD_ID> &getStates() ;
      bool isReachable(const std::vector<bool> &stateVector) ;
      void setTransitionFunctions(const std::vector<BDD_ID> &transitionFunctions) ;
+
+vector<bool> initialstate;
 vector<BDD_ID> SetofStates;
+vector<BDD_ID> SetofnextStates;
+
+vector<BDD_ID> TF;
+
 
      void setInitState(const vector<bool> &stateVector);
      void computereachablestate (const std::vector<BDD_ID> &transitionFunctions,const vector<bool> &stateVector);
-     vector<BDD_ID> TF;
  };
 
 }
