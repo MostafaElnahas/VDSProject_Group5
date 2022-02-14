@@ -72,8 +72,8 @@ namespace ClassProject {
 
          virtual BDD_ID computetransationrelation ();
         virtual BDD_ID computecs0 ();
-        virtual BDD_ID imgcurrentstate ();
-        virtual BDD_ID imgnextstate ();
+        virtual BDD_ID imgcurrentstate (BDD_ID e);
+        virtual BDD_ID imgnextstate (BDD_ID e, BDD_ID t);
         virtual BDD_ID computereachablestate();
 
 

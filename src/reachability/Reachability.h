@@ -28,8 +28,8 @@ BDD_ID Taw,Cs0,CRit,CR,imgc,imgnx;
      void setInitState(const vector<bool> &stateVector);
      BDD_ID computetransationrelation ();
      BDD_ID computecs0();
-      BDD_ID imgcurrentstate ();
-     BDD_ID imgnextstate ();
+      BDD_ID imgcurrentstate (BDD_ID e);
+     BDD_ID imgnextstate (BDD_ID e, BDD_ID t);
      BDD_ID computereachablestate ();
  };
 
