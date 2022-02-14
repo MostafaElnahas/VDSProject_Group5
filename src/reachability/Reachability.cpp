@@ -4,14 +4,16 @@
 //
 
 #include "Reachability.h"
-
-ClassProject::Reachability::Reachability(unsigned int stateSize) : ReachabilityInterface(stateSize){
+/*
+ClassProject::Reachability:: Reachability(unsigned int stateSize): ReachabilityInterface(stateSize){
+    Taw=0,Cs0=0,CRit=0,CR=0,imgc=0,imgnx=0;
      vector<BDD_ID> S;
      string st;
 if (stateSize==0)
     throw ;
 //Define States
 initialstate.assign(stateSize,0);
+
 for(int i=0; i <= stateSize; i++)
 {
 
@@ -25,49 +27,58 @@ SetofStates.push_back(Manager::createVar(st));
 
     }
 }
-
-const vector<ClassProject::BDD_ID> & ClassProject::Reachability::getStates()
+*/
+const vector<ClassProject::BDD_ID> & ClassProject::Reachability::getStates() const
 {
+
     return SetofStates;
 }
 
-
-//bool ClassProject::Reachability::isReachable(const std::vector<bool> &stateVector)
-//{
-
-
+/*
+bool ClassProject::Reachability::isReachable(const std::vector<bool> &stateVector)
+{
 
 
-//}
 
+
+}
+*/
 void ClassProject::Reachability::setTransitionFunctions(const std::vector<BDD_ID> &transitionFunctions) {
 
 if(transitionFunctions.size()!=SetofStates.size())
     throw;
-    for(int i=0; i <= transitionFunctions.size(); i++)
+    for(int i=0; i <transitionFunctions.size(); i++)
     {
         TF[i]=transitionFunctions[i];
+        cout<<TF[i]<<endl;
     }
 
 
 }
 void ClassProject::Reachability::setInitState(const std::vector<bool> &stateVector) {
 
-    for(int i=0; i <= SetofStates.size(); i++)
+    for(int i=0; i < SetofStates.size(); i++)
     {
-     initialstate[i]=stateVector[i];
+        if (stateVector[i]==false)
+            initialstate[i]=0;
+        else
+            initialstate[i]=1;
+        cout<<initialstate[i]<<endl;
 
     }
     }
+
+
+
 
 
 ClassProject::BDD_ID ClassProject::Reachability:: computetransationrelation (){
 BDD_ID Tawtemp=1,taw=1;
 
-    for(int i=0; i <=SetofStates.size(); i++)
+    for(int i=0; i <SetofStates.size(); i++)
     {
         Tawtemp=Manager::xnor2(SetofnextStates[i],TF[i]);
-        taw=Manager::and2(Taw,Tawtemp);
+        taw=Manager::and2(taw,Tawtemp);
 
     }
     return taw;
@@ -78,7 +89,7 @@ ClassProject::BDD_ID ClassProject::Reachability::computecs0()
 {
     ;
     BDD_ID Cs0temp,cs01=1;
-    for(int i=0; i <=SetofStates.size(); i++)
+    for(int i=0; i <SetofStates.size(); i++)
     {
         Cs0temp= Manager::xnor2(SetofnextStates[i],initialstate[i]);
         cs01=Manager::and2(cs01,Cs0temp);
@@ -108,13 +119,11 @@ return imgnxtemp;
 
 
 ClassProject::BDD_ID ClassProject::Reachability::imgcurrentstate(BDD_ID e)  {
-
-
     BDD_ID x,y,xt=1,imgctemp,temp;
-    for(int i=0; i <=SetofStates.size(); i++)
+    for(int i=0; i <SetofStates.size(); i++)
     {
         x=Manager::Manager::xnor2(SetofStates[i],SetofnextStates[i]);
-         xt=Manager::and2(x,xt);
+             xt=Manager::and2(x,xt);
     }
     y=Manager::and2(x,e);
 
@@ -137,7 +146,6 @@ return imgctemp;
 ClassProject::BDD_ID ClassProject::Reachability::computereachablestate()
 
  {
-
    Taw=Reachability::computetransationrelation();
     Cs0=Reachability::computecs0();
     CRit=Cs0;
@@ -151,9 +159,6 @@ ClassProject::BDD_ID ClassProject::Reachability::computereachablestate()
     }
      return CR;
  }
-
-
-
 
 
 

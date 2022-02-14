@@ -4,23 +4,32 @@
 
 #include "Tests.h"
 
-class ClassProject::Reachability::Reachability{
+TEST(Createvaribletest, label) {
+    unsigned int j=2;
+    ClassProject::Reachability * myReachabiliy= new ClassProject::Reachability(j);
+    myReachabiliy->setInitState({0,0});
+    vector<ClassProject::BDD_ID>i={2,3};
+    vector< bool > k = {false,false};
+    EXPECT_EQ(i, myReachabiliy->getStates());
+    myReachabiliy->neg(2);
+    myReachabiliy->neg(3);
+    myReachabiliy->setTransitionFunctions({,1});
 
-    TEST(Createvaribletest, label) {
-
-        EXPECT_EQ(2,computecs0());
 
 
-    }
 
 
-    int main(int argc, char *argv[]) {
+}
+
+
+
+int main(int argc, char *argv[]) {
         ::testing::InitGoogleTest(&argc, argv);
         return RUN_ALL_TESTS();
 
 
     }
-};
+
 
 
 

@@ -12,7 +12,8 @@ namespace ClassProject {
     class ReachabilityInterface : public Manager {
     public:
 
-        virtual ~ReachabilityInterface() = default;
+        ReachabilityInterface() = default;
+            virtual ~ReachabilityInterface() = default;
 
         /**
          * The constructor initializes a default state machine with the given number of variables.
@@ -70,11 +71,11 @@ namespace ClassProject {
         virtual void setInitState(const std::vector<bool> &stateVector) = 0;
 
 
-         virtual BDD_ID computetransationrelation ();
-        virtual BDD_ID computecs0 ();
-        virtual BDD_ID imgcurrentstate (BDD_ID e);
-        virtual BDD_ID imgnextstate (BDD_ID e, BDD_ID t);
-        virtual BDD_ID computereachablestate();
+        virtual BDD_ID computetransationrelation ()=0;
+        virtual BDD_ID computecs0 ()=0;
+        virtual BDD_ID imgcurrentstate (BDD_ID e)=0;
+        virtual BDD_ID imgnextstate (BDD_ID e, BDD_ID t)=0;
+        virtual BDD_ID computereachablestate()=0;
 
 
     };
