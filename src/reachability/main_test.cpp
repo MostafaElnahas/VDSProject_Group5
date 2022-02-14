@@ -8,12 +8,11 @@ TEST(Createvaribletest, label) {
     unsigned int j=2;
     ClassProject::Reachability * myReachabiliy= new ClassProject::Reachability(j);
     myReachabiliy->setInitState({0,0});
+    //myReachabiliy-> setTransitionFunctions({0,1});
+
     vector<ClassProject::BDD_ID>i={2,3};
-    vector< bool > k = {false,false};
+
     EXPECT_EQ(i, myReachabiliy->getStates());
-    myReachabiliy->neg(2);
-    myReachabiliy->neg(3);
-    myReachabiliy->setTransitionFunctions({,1});
 
 
 

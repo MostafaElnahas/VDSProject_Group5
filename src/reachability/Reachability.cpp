@@ -50,7 +50,6 @@ if(transitionFunctions.size()!=SetofStates.size())
     for(int i=0; i <transitionFunctions.size(); i++)
     {
         TF[i]=transitionFunctions[i];
-        cout<<TF[i]<<endl;
     }
 
 
