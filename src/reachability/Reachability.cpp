@@ -21,17 +21,14 @@ bool ClassProject::Reachability::isReachable(const std::vector<bool> &stateVecto
 
     BDD_ID CRtemp;
 CRtemp=computereachablestate();
-for(int i=0;i<=stateVector.size();i++){
+for(int i=0;i<stateVector.size();i++){
     if(stateVector[i]==true)
-        CRtemp= coFactorTrue(CRtemp,SetofStates[i]);
+        CRtemp = coFactorTrue(CRtemp, SetofStates[i]);
+
     else
         CRtemp= Manager::coFactorFalse(CRtemp,SetofStates[i]);
 
-
-
-
-
-    }
+}
     return (CRtemp==True());
 
 }
@@ -40,7 +37,9 @@ for(int i=0;i<=stateVector.size();i++){
 void ClassProject::Reachability::setTransitionFunctions(const std::vector<BDD_ID> &transitionFunctions) {
 
 if(transitionFunctions.size()!=SetofStates.size())
-    throw;
+    throw std::runtime_error("not equal");
+
+
     for(int i=0; i <transitionFunctions.size(); i++)
     {
         TF[i]=transitionFunctions[i];
@@ -67,7 +66,7 @@ void ClassProject::Reachability::setInitState(const std::vector<bool> &stateVect
 
 
 ClassProject::BDD_ID ClassProject::Reachability:: computetransationrelation (){
-BDD_ID Tawtemp=1,taw=1;
+BDD_ID Tawtemp,taw=1;
 
     for(int i=0; i <SetofStates.size(); i++)
     {
@@ -85,7 +84,7 @@ ClassProject::BDD_ID ClassProject::Reachability::computecs0()
     BDD_ID Cs0temp,cs01=1;
     for(int i=0; i <SetofStates.size(); i++)
     {
-        Cs0temp= Manager::xnor2(SetofnextStates[i],initialstate[i]);
+        Cs0temp= Manager::xnor2(SetofStates[i],initialstate[i]);
         cs01=Manager::and2(cs01,Cs0temp);
     }
 
@@ -96,7 +95,7 @@ ClassProject::BDD_ID ClassProject::Reachability::computecs0()
 
 ClassProject::BDD_ID ClassProject::Reachability::imgnextstate(BDD_ID e, BDD_ID t) {
 BDD_ID imgnxtemp,temp;
-temp=e*t;
+temp= Manager::and2(e,t);
     for(int i=SetofStates.size()-1; i >=0; i--)
     {
         temp=Manager::or2(coFactorTrue(temp,SetofStates[i]),Manager::coFactorFalse(temp,SetofStates[i]));
@@ -113,16 +112,15 @@ return imgnxtemp;
 
 
 ClassProject::BDD_ID ClassProject::Reachability::imgcurrentstate(BDD_ID e)  {
-    BDD_ID x,y,xt=1,imgctemp,temp;
-    for(int i=0; i <SetofStates.size()-1; i++)
+    BDD_ID x,xt=1,imgctemp,temp;
+    for(int i=0; i <SetofStates.size(); i++)
     {
         x=Manager::Manager::xnor2(SetofStates[i],SetofnextStates[i]);
              xt=Manager::and2(x,xt);
     }
-    y=Manager::and2(x,e);
+    temp=Manager::and2(xt,e);
 
-    temp=Manager::and2(xt,y);
-    for(int i=SetofStates.size(); i >=0; i--)
+    for(int i=SetofStates.size()-1; i >=0; i--)
     {
         temp=Manager::or2(Manager::coFactorTrue(temp,SetofnextStates[i]),Manager::coFactorFalse(temp,SetofnextStates[i]));
 
@@ -146,7 +144,7 @@ ClassProject::BDD_ID ClassProject::Reachability::computereachablestate()
     CRit=Cs0;
     while (true) {
         CR = CRit;
-       imgc= Reachability::imgnextstate(Taw,Cs0);
+       imgc= Reachability::imgnextstate(Taw,CR);
         imgnx=Reachability::imgcurrentstate(imgc);
         CRit = Manager::or2(CR, imgnx);
         if (CRit == CR)
