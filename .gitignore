@@ -6,10 +6,7 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
-cmake/*
-CMakeFiles/*
-.cmake/*
-cmake*
-CMake*
+
+cmake-build-debug-wsl/*
 src/results/*
 .idea/*

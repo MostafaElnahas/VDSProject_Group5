@@ -17,6 +17,8 @@ namespace ClassProject {
  public:
 
     Reachability(unsigned int stateSize){
+if (stateSize==0)
+    throw std::runtime_error("error");
 
          vector<BDD_ID> S;
          string st;

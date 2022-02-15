@@ -14,6 +14,11 @@ const vector<ClassProject::BDD_ID> & ClassProject::Reachability::getStates() con
 
 bool ClassProject::Reachability::isReachable(const std::vector<bool> &stateVector)
 {
+    if(stateVector.size()!=SetofStates.size())
+        throw std::runtime_error("Not equal");
+
+
+
     BDD_ID CRtemp;
 CRtemp=computereachablestate();
 for(int i=0;i<=stateVector.size();i++){
@@ -22,12 +27,13 @@ for(int i=0;i<=stateVector.size();i++){
     else
         CRtemp= Manager::coFactorFalse(CRtemp,SetofStates[i]);
 
-    return (CRtemp==True());
 
 
 
 
     }
+    return (CRtemp==True());
+
 }
 
 
