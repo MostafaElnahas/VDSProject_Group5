@@ -14,17 +14,17 @@ namespace ClassProject {
      vector<BDD_ID> SetofStates;
      vector<BDD_ID> SetofnextStates;
      vector<BDD_ID> TF;
-     BDD_ID Taw,Cs0,CRit,CR,imgc,imgnx;
  public:
 
     Reachability(unsigned int stateSize){
 
-         Taw=0,Cs0=0,CRit=0,CR=0,imgc=0,imgnx=0;
          vector<BDD_ID> S;
          string st;
          if (stateSize==0)
              throw ;
 //Define States
+        TF.assign(stateSize,0);
+
          initialstate.assign(stateSize,0);
 
          for(int i=0; i < stateSize; i++)
@@ -53,7 +53,7 @@ namespace ClassProject {
 
 
      const std::vector<BDD_ID> &getStates() const ;
-    // bool isReachable(const std::vector<bool> &stateVector) ;
+   bool isReachable(const std::vector<bool> &stateVector) ;
      void setTransitionFunctions(const std::vector<BDD_ID> &transitionFunctions) ;
 
      void setInitState(const vector<bool> &stateVector);
