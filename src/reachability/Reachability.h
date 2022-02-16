@@ -25,7 +25,6 @@ if (stateSize==0)
          if (stateSize==0)
              throw ;
 //Define States
-        TF.assign(stateSize,0);
 
          initialstate.assign(stateSize,0);
 
@@ -35,6 +34,13 @@ if (stateSize==0)
              SetofStates.push_back(Manager::createVar(st));
 
          }
+
+        for(int i=0; i < stateSize; i++)
+        {
+
+            TF.push_back(SetofStates[i]);
+
+        }
 //Define next states.
          for(int i=0; i < stateSize; i++)
          {
