@@ -37,14 +37,13 @@ void ClassProject::Reachability::setTransitionFunctions(const std::vector<BDD_ID
         throw std::runtime_error("not equal");
     for (int i = 0; i < transitionFunctions.size(); i++) {
 
-        if(transitionFunctions[i]>Manager::uniqueTableSize())
+        if (transitionFunctions[i] > Manager::uniqueTableSize())
             throw std::runtime_error("not equal");
 
     }
 
-        for (int i = 0; i < transitionFunctions.size(); i++) {
+    for (int i = 0; i < transitionFunctions.size(); i++) {
         TF[i] = transitionFunctions[i];
-        cout << TF[i] << endl;
     }
 
 
@@ -52,14 +51,13 @@ void ClassProject::Reachability::setTransitionFunctions(const std::vector<BDD_ID
 
 void ClassProject::Reachability::setInitState(const std::vector<bool> &stateVector) {
 
-    if (stateVector.size()!=SetofStates.size())
+    if (stateVector.size() != SetofStates.size())
         throw runtime_error("not equal");
     for (int i = 0; i < SetofStates.size(); i++) {
         if (stateVector[i] == false)
             initialstate[i] = 0;
         else
             initialstate[i] = 1;
-        cout << initialstate[i] << endl;
 
     }
 }

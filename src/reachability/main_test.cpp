@@ -38,11 +38,11 @@ TEST_F(ReachabilityTest, SetTransitionFunctionsException) { /* NOLINT */
     ASSERT_THROW(fsm2->setTransitionFunctions({fsm2->False(), fsm2->False(), fsm2->False()}), std::runtime_error);
 
     // Invalid BDD_ID
-    ASSERT_THROW(fsm2->setTransitionFunctions({fsm2->False(), fsm2->uniqueTableSize()+1337}), std::runtime_error);
+    ASSERT_THROW(fsm2->setTransitionFunctions({fsm2->False(), fsm2->uniqueTableSize() + 1337}), std::runtime_error);
 }
 
 TEST_F(ReachabilityTest, SetInitState) { /* NOLINT */
-  ASSERT_NO_THROW(fsm1->setInitState({true}));
+    ASSERT_NO_THROW(fsm1->setInitState({true}));
     ASSERT_NO_THROW(fsm2->setInitState({true, false}));
     ASSERT_NO_THROW(fsm3->setInitState({true, false, false}));
 

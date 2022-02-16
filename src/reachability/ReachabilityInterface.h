@@ -13,7 +13,8 @@ namespace ClassProject {
     public:
 
         ReachabilityInterface() = default;
-            virtual ~ReachabilityInterface() = default;
+
+        virtual ~ReachabilityInterface() = default;
 
         /**
          * The constructor initializes a default state machine with the given number of variables.
@@ -42,7 +43,7 @@ namespace ClassProject {
          * @returns true, if the given state is in the reachable state set
          * @throws std::runtime_error if size does not match with number of state bits
          */
-      virtual bool isReachable(const std::vector<bool> &stateVector) = 0;
+        virtual bool isReachable(const std::vector<bool> &stateVector) = 0;
 
         /**
          * Each state variable has a transition function.
@@ -71,11 +72,15 @@ namespace ClassProject {
         virtual void setInitState(const std::vector<bool> &stateVector) = 0;
 
 
-        virtual BDD_ID computetransationrelation ()=0;
-        virtual BDD_ID computecs0 ()=0;
-        virtual BDD_ID imgcurrentstate (BDD_ID e)=0;
-        virtual BDD_ID imgnextstate (BDD_ID e, BDD_ID t)=0;
-        virtual BDD_ID computereachablestate()=0;
+        virtual BDD_ID computetransationrelation() = 0;
+
+        virtual BDD_ID computecs0() = 0;
+
+        virtual BDD_ID imgcurrentstate(BDD_ID e) = 0;
+
+        virtual BDD_ID imgnextstate(BDD_ID e, BDD_ID t) = 0;
+
+        virtual BDD_ID computereachablestate() = 0;
 
 
     };
